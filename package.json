@@ -1,0 +1,39 @@
+{
+  "name": "ncr_website_redesign",
+  "version": "1.0.0",
+  "description": "Redesigned Northern/NorthMart marketing website.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vince-M/ncr_website_redesign.git"
+  },
+  "keywords": [
+    "northern",
+    "northmart",
+    "ncr",
+    "nwc"
+  ],
+  "author": "Vince Mendella",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vince-M/ncr_website_redesign/issues"
+  },
+  "homepage": "https://github.com/Vince-M/ncr_website_redesign#readme",
+  "dependencies": {
+    "@babel/core": "^7.25.7",
+    "@babel/preset-env": "^7.25.7",
+    "autoprefixer": "^10.4.20",
+    "browser-sync": "^3.0.3",
+    "cssnano": "^7.0.6",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-postcss": "^10.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-terser": "^2.1.0",
+    "postcss": "^8.4.47",
+    "sass": "^1.79.4"
+  }
+}

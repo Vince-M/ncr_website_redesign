@@ -1,0 +1,44 @@
+:root {
+  --primaryBlue: hsl(208, 100%, 34%); // #005cab rgb(0, 92, 171)
+  --darkBlue: hsl(207, 100%, 13%); // #002544  rgb(0, 37, 68)
+  --medBlue: hsl(208, 57%, 47%); // #337dbc  rgb(51, 125, 188)
+  --lightBlue: hsl(195, 66%, 71%) ; // #83cee6 rgb(131, 206, 230)
+  --mutedBlue: hsl(208, 33%, 60%) ; // #789CBB rgb(120, 156, 187)
+
+  --primaryGreen: hsl(92, 51%, 51%); // #7dc242  rgb(125, 194, 66)
+  --darkGreen: hsl(92, 50%, 20%); // #324e1a  rgb(50, 78, 26)
+  --medGreen: hsl(92, 51%, 66%); // #a4d47b  rgb(164, 212, 123)
+  --lightGreen: hsl(79, 45%, 24%); // #cbe7b3  rgb(71, 88, 33)
+  --mutedGreen: hsl(92, 37%, 71%); // #B2D098  rgb(178, 208, 152)
+
+  --primaryOrange: hsl(32, 94%, 60%); // #f9a13a  rgb(249, 161, 58)
+  --darkOrange: hsl(32, 62%, 42%); // #ae7129  rgb(174, 113, 41)
+  --medOrange: hsl(33, 94%, 68%); // #fab461  rgb(250, 180, 97)
+  --lightOrange: hsl(32, 95%, 84%); // #FDD9B0   rgb(253, 217, 176)
+  --mutedOrange: hsl(32, 61%, 76%); //  #e7c59d  rgb(231, 197, 157)
+
+  --primaryYellow: hsl(49, 100%, 50%); // #ffd100  rgb(255, 209, 0)
+  --darkYellow:  	hsl(49, 100%, 30%); // #997d00  rgb(153, 125, 0)
+  --medYellow: hsl(49, 100%, 65%); // #ffdf4d  rgb(255, 223, 77)
+  --lightYellow: hsl(49, 100%, 80%); // #ffed99  rgb(255, 237, 153)
+  --mutedYellow: hsl(48, 54%, 70%); // #dccc89  rgb(220, 204, 137)
+
+  --primaryRed: hsl(347, 100%, 45%); // #e70033  rgb(231, 0, 51)
+  --darkRed: hsl(347, 100%, 27%); // #8b001f   	rgb(139, 0, 31)
+  --medRed:  	hsl(347, 83%, 56%); // #ec335c   	rgb(236, 51, 92)
+  --lightRed: hsl(347, 82%, 78%); // #f599ad  rgb(255, 237, 153)
+  --mutedRed: hsl(347, 54%, 67%); // #d97e92  rgb(217, 126, 146)
+
+  --weFinancial: hsl(193, 100%, 42%); // #00a6d6  rgb(0, 166, 214)
+  --weFinancialDark: hsl(207, 100%, 26%); // #004B87  rgb(0, 75, 135)
+
+
+  --lightGrey: hsl(0, 0%, 81%); // #cfcfcf rgb(207, 207, 207)
+  --medGrey:  hsl(0, 0%, 53%); // #878787   rgb(135, 135, 135)
+  --dkGrey: hsl(0, 0%, 25%); // #3F3F3F   	rgb(63, 63, 63)
+  --black: hsl(0, 0%, 6%); // #0F0F0F   	rgb(15, 15, 15)
+  --textBlack: hsl(0, 0%, 16%); // #282828  rgb(40, 40, 40)
+  --white: hsl(45, 22%, 96%); // #F8F7F4   rgb(248, 247, 244)
+  --white60: hsla(240, 100%, 99%, .85); // #F8F8FF  rgba(248, 248, 255, .85)
+  
+}
