@@ -3,7 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Northern / NorthMart</title>
+
+  <link rel="icon" type="image/png" href="/favicon-48x48.png" sizes="48x48" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
 
   <link rel="stylesheet" href="dist/style.css">
   <script defer src="dist/bodyScrollLock.min.js"></script>
@@ -17,10 +24,83 @@
 </head>
 
 <body>
-  <a href="#main" class="visually-hidden">Skip to main content</a>
 
   <!-- HEADER / NAVIGATION SECTION START
   =================================================== -->
+  <header class="header topnav">
+    <a href="#main" class="visually-hidden">Skip to main content</a>
+    <div class="wrapper topnav__wrapper">
+
+      <div class="siteBranding">
+        <a href="index.html">
+          <img class="topnav__branding" src="img/ncr_brandHead.svg" alt="Northern/NorthMart branding" width="176" height="102">
+        </a>
+      </div>
+
+      <nav class="nav">
+        <span id="nav-label" hidden>Navigation</span>
+
+        <!-- <button 
+        id="btnOpen";
+        class="topnav__open" 
+        aria-expanded="false" 
+        aria-labelledby="nav-label">
+
+        <img src="/img/hamburger.svg" alt="" width="30" height="23">
+      </button>
+      <div 
+        id="menuTopNav" 
+        class="topnav__menu" 
+        role="dialog" 
+        aria-labelledby="nav-label">
+
+        <button 
+          id="btnClose" 
+          class="topnav__close">
+          
+          <img src="/img/close-button.svg" alt="" width="26" height="26">
+        </button> -->
+        
+        <ul class="topLinks">
+          <li><a href=""></a>Location</li>
+          <li><a href=""></a>email signup</li>
+          <li><a href=""></a>flyer</li>
+          <li>
+            <form>
+              <div>
+                <input type="search" id="mySearch" name="q">
+                <button>Search</button>
+              </div>
+            </form>
+          </li>
+          <li>eng/fre</li>
+        </ul>
+
+        <ul class="topnav__links">
+          <li class="topnav__item">
+            <a class="topnav__link" href="">In-Store</a>
+          </li>
+          <li class="topnav__item">
+            <a class="topnav__link" href="">Community</a>
+          </li>
+          <li class="topnav__item">
+            <a class="topnav__link" href="">Healthy Horizons</a>
+          </li>
+          <li class="topnav__item">
+            <a class="topnav__link" href="">Services</a>
+          </li>
+          <li class="topnav__item">
+            <a class="topnav__link" href="">About</a>
+          </li>
+          <li class="topnav__item">
+            <a class="topnav__link" href="">Our Promise</a>
+          </li>
+        </ul>
+      </nav>
+
+
+    </div>
+  </header>
   <!-- ============================================== -->
 
   <!-- MAIN
@@ -32,14 +112,15 @@
 
     <!-- INTRO
     =================================================== -->
-    <h1>Test Test</h1>
-    <p>This is a test.</p>
     <!-- ============================================== -->
 
   <!-- ============================================== -->
 
   <!-- FOOTER
   =================================================== -->
+  <footer class="footer" role="contentinfo">
+
+  </footer>
   <!-- ============================================== -->
   
 </body>
