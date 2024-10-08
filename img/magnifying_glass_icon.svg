@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
+  <g id="magnifying_glass" data-name="magnifying glass" transform="translate(0.043 0.043)">
+    <g id="invisible_box" data-name="invisible box" transform="translate(-0.043 -0.043)">
+      <rect id="Rectangle_19" data-name="Rectangle 19" width="25" height="25" transform="translate(0)" fill="none"/>
+    </g>
+    <g id="icons_Q2" data-name="icons Q2" transform="translate(1.839 2.02)">
+      <path id="Path_2" data-name="Path 2" d="M17.641,16.37a7.619,7.619,0,0,0,1.544-5.611,7.825,7.825,0,0,0-7.1-6.8,7.735,7.735,0,1,0-1.544,15.393A7.876,7.876,0,0,0,16.2,17.863l6.435,6.384a.978.978,0,0,0,1.441,0h0a.978.978,0,0,0,0-1.441Zm-5.2.927a5.663,5.663,0,0,1-6.486-6.589,5.56,5.56,0,0,1,4.582-4.582,5.611,5.611,0,0,1,6.538,6.538A5.714,5.714,0,0,1,12.442,17.3Z" transform="translate(-3.574 -3.924)" fill="#005cab"/>
+    </g>
+  </g>
+</svg>
