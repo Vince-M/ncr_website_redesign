@@ -1,1 +1,75 @@
 @use '../util' as u;
+
+.hero {
+
+  &__text {
+    background-color: var(--primaryBlue);
+  }
+}
+
+.hero.full-width-split-screen {
+  padding-top: 144px;
+}
+
+.full-width-split-screen {
+  padding-block: 0;
+}
+
+.full-width-split-screen > :not(img) {
+  padding-block: var(--wrapper-padding-block);
+  padding-inline: var(--wrapper-padding-inline);
+}
+
+@media (min-width: 930px) {
+  .full-width-split-screen {
+    display: grid;
+    grid-template-columns: 
+      minmax(var(--wrapper-padding-inline), 1fr) 
+      minmax(0, calc(var(--wrapper-max-width) / 2)) 
+      minmax(0, calc(var(--wrapper-max-width) / 2)) 
+      minmax(var(--wrapper-padding-inline), 1fr);
+    position: relative;
+  }
+
+  .full-width-split-screen > img:first-child {
+    grid-column: 1 / 3;
+  }
+
+  .full-width-split-screen > img:last-child {
+    grid-column: 3 / -1;
+  }
+
+  .full-width-split-screen > :not(img) {
+    display: grid;
+    align-content: center;
+    justify-items: start;
+  }
+
+  .full-width-split-screen > :not(img):first-child {
+    grid-column: 2 / 3;
+    padding-left: 0;
+    padding-right: clamp(1rem, 5vw, 3rem);
+  }
+
+  .full-width-split-screen > :not(img):last-child {
+    grid-column: 3 / 4;
+    padding-right: 0;
+    padding-left: clamp(1rem, 5vw, 3rem);
+  }
+
+  .full-width-split-screen > :not(img)::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    grid-row: 1 / 2;
+    background-color: inherit;
+  }
+
+  .full-width-split-screen > :not(img):first-child::before {
+    grid-column: 1 / 2;
+  }
+
+  .full-width-split-screen > :not(img):last-child::before {
+    grid-column: 4 / 5;
+  }
+}

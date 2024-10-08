@@ -1,9 +1,7 @@
 @use '../util' as u;
 
 .topnav {
-  position: sticky;
-  top: 0;
-  z-index: 10;
+  margin: 0;
 
   &__wrapper {
     align-items: center;
@@ -19,7 +17,12 @@
   &__links {
     display: flex;
     flex-direction: row;
-    gap: u.rem(32);
+    justify-content: flex-end;
+    gap: u.rem(40);
+    list-style-type: none;
+    margin-bottom: 32px;
+    padding: 0;
+
 
     @include u.breakpoint-down(medium) {
       flex-direction: column;
@@ -37,43 +40,98 @@
 
     &:hover {
       text-decoration: underline;
+      color: var(--darkOrange);
       cursor: pointer;
     }
+
   }
 }
 
-.header {
-  width: 100%;
-  height: auto;
-  background-color: var(--white);
-  box-shadow: 0 0 u.rem(24) var(--black);
 
-  ul {
+// .topnav {
 
-    li {
-      list-style-type: none;
-    }
-  }
-}
 
-.siteBranding {
-  background-color: var(--primaryBlue);
-  box-shadow: 0 0 u.rem(24) var(--black);
+//   &__links {
+//     display: flex;
+//     flex-direction: row;
+//     gap: u.rem(32);
 
-  img {
-    margin: u.rem(112) 0 u.rem(8);
-    padding: 0 u.rem(8);
-  }
+//     @include u.breakpoint-down(medium) {
+//       flex-direction: column;
+//       align-items: left;
+//     }
+//   }
+
+//   &__link {
+//     display: block;
+//     font-size: u.rem(18);
+//     line-height: 1;
+//     font-weight: 400;
+//     color: var(--primaryBlue);
+//     text-decoration: none;
+
+//     &:hover {
+//       text-decoration: underline;
+//       cursor: pointer;
+//     }
+//   }
+// }
+
+// .header {
+//   width: 100%;
+//   height: auto;
+//   background-color: var(--white);
+//   box-shadow: 0 0 u.rem(24) var(--black);
+
+//   ul {
+
+//     li {
+//       list-style-type: none;
+//     }
+//   }
+// }
+
+// .siteBranding {
+//   background-color: var(--primaryBlue);
+//   box-shadow: 0 0 u.rem(24) var(--black);
+
+//   img {
+//     margin: u.rem(112) 0 u.rem(8);
+//     padding: 0 u.rem(8);
+//   }
+// }
+.mySearch {
+  width: 400px;
 }
 
 .topLinks {
   display: flex;
   flex-direction: row;
-  gap: u.rem(74);
+  gap: u.rem(56);
+  list-style-type: none;
+  margin-top: 24px;
+  padding: 0;
+  color: var(--primaryBlue);
+
+  &__lang {
+
+    &--active {
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+  }
+
+  &__location,
+  &__email,
+  &__flyer {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+  }
 }
 
-.nav {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-}
+// .nav {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: flex-end;
+// }

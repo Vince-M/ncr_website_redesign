@@ -1,1 +1,45 @@
 @use '../util' as u;
+
+.header {
+  width: 10vw;
+  height: auto;
+  background-color: var(--white);
+  box-shadow: 0 0 u.rem(24) var(--black);
+  z-index: 50;
+
+  &__site {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    background-color: var(--white);
+    box-shadow: 0 0 u.rem(24) var(--black);
+  }
+
+}
+
+.site {
+
+  &__branding {
+    display: grid;
+    grid-column: 1;
+    grid-row: 1/4;
+    z-index: 30;
+    background-color: var(--primaryBlue);
+    padding: 40px 15px 0 15px;
+    height: 196px;
+    width: 100%;
+    max-width: 196px;
+
+    a {
+      grid-row: 4/4;
+    }
+  }
+
+  &__navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 144px;
+  }
+}
