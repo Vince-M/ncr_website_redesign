@@ -2,8 +2,30 @@
 
 .hero {
 
+  &__section {
+    background-color: var(--darkBlue);
+
+    &--intro {
+      height: 90vh;
+      margin-bottom: u.rem(144);
+    }
+  }
+
   &__text {
-    background-color: var(--primaryBlue);
+    font-size: 90px;
+    line-height: 1;
+    color: var(--white);
+    border-left: 20px solid var(--white);
+    padding-left: 25px;
+    margin-bottom: 0;
+    display: block;
+  }
+
+  &__image {
+    height: 90vh;
+    // width: 100vw;
+    object-fit: cover;
+    margin-top: u.rem(144);
   }
 }
 
