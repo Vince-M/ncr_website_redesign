@@ -6,14 +6,15 @@
     background-color: var(--darkBlue);
 
     &--intro {
-      height: 90vh;
-      margin-bottom: u.rem(144);
+      // height: 100vh;
+      margin-bottom: u.rem(80);
     }
   }
 
   &__text {
     font-size: 90px;
     line-height: 1;
+    letter-spacing: 0.5px;
     color: var(--white);
     border-left: 20px solid var(--white);
     padding-left: 25px;
@@ -75,7 +76,7 @@
 
   .full-width-split-screen > :not(img):last-child {
     grid-column: 3 / 4;
-    padding-right: 0;
+    padding-right: u.rem(24);
     padding-left: clamp(1rem, 5vw, 3rem);
   }
 
