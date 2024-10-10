@@ -1,1 +1,9 @@
 @use '../util' as u;
+
+.btn {
+
+  &__search {
+    border: 0;
+    background-color: var(--white);
+  }
+}

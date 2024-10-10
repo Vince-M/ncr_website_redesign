@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 28 28.1">
+  <defs>
+    <style>
+      .socialIcon {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <!-- Generator: Adobe Illustrator 28.7.1, SVG Export Plug-In . SVG Version: 1.2.0 Build 142)  -->
+  <g>
+    <g id="Layer_1">
+      <g>
+        <rect class="socialIcon" x=".4" y="9.3" width="5.8" height="18.7"/>
+        <path class="socialIcon" d="M3.4,0C1.5,0,0,1.5,0,3.4s1.4,3.4,3.3,3.4,3.4-1.5,3.4-3.4S5.2,0,3.4,0Z"/>
+        <path class="socialIcon1" d="M21,8.9c-2.2,0-4.4,1.1-5.5,3v-2.6h-5.6v18.9h5.8v-9.3c0-2.4.5-4.8,3.5-4.8s3,2.7,3,4.9v9.1h5.8v-10.3c0-5-1.1-8.9-7-8.9Z"/>
+      </g>
+    </g>
+  </g>
+</svg>
