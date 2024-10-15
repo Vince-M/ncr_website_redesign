@@ -27,9 +27,15 @@
     background-color: var(--primaryBlue);
     padding: 40px 15px 0 15px;
     height: 196px;
-    width: 100%;
+    width: u.rem(200);
     max-width: 196px;
     box-shadow: 0 0 10px var(--black);
+    position: absolute;
+
+    @include u.breakpoint-down(small) {
+      left: 24px;
+    }
+
 
     a {
       grid-row: 4/4;
