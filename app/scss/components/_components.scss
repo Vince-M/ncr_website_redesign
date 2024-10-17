@@ -8,8 +8,9 @@
     gap: u.rem(32);
     margin-bottom: u.rem(80);
 
-    @include u.breakpoint-down(small) {
+    @include u.breakpoint-down(medium) {
       flex-direction: column;
+      align-items: center;
     }
 
 

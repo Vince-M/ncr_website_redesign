@@ -32,43 +32,171 @@
     =================================================== -->
     <header id="masthead" class="header topnav" role="header">
       <h2 class="visually-hidden">Header</h2>
-      <div class="wrapper">
+      <div class="wrapper topnav__wrapper">
 
-        <!-- SITE BRANDING GOES HERE -->
-        <a href="index.html">
-          <img src="img/ncr_brandHead.svg" alt="Northern/NorthMart homelink" width="176" height="102">
-        </a>
-         <!-- SITE BRANDING ENDS HERE -->
+        <!-- SITE BRANDING STARTS HERE -->
+        <div class="topnav__branding">
+          <a href="index.html" class="topnav__homelink">
+            <img class="topnav__logo" src="img/ncr_brandHead.svg" alt="Northern/NorthMart homepage" width="176" height="102">
+          </a>
+        </div>
+        <!-- SITE BRANDING ENDS HERE -->
 
-         <nav>
-          <ul class="topnav__links">
-            <li class="topnav__item">
-              <a href="#" class="topnav__link" >In-Store</a>
+        <!-- TOPNAV STARTS HERE -->
+
+        <div class="topnav__navLinks">
+
+          <button class="topnav__open">
+            <img src="img/hamburger.svg" alt="" width="30" height="23">
+          </button>
+          <div class="topnav__menu">
+            <button class="topnav__close">
+              <img src="img/close-button.svg" alt="" width="26" height="26">
+            </button>
+          <!-- TOP NAVIGATION STARTS HERE -->
+          <nav>
+          <ul class="topnav__navigation">
+            <li class="topnav__location topnav__item">
+              <a class="topnav__link" href="">
+                <img  class="topnav__link--icon" src="img/icon_marker.svg" alt="" width="20" height="20"> 
+                Location
+              </a>
+            </li>
+            <li class="topnav__email topnav__item">
+              <a class="topnav__link" href="">
+                <img class="topnav__link--icon" src="img/icon_email.svg" alt="" width="22" height="22">
+                email signup
+              </a>
             </li>
             <li class="topnav__item">
-              <a href="#" class="topnav__link" >Community</a>
+              <form>
+                <div>
+                  <input type="search" id="mySearch" class="mySearch" name="q">
+                  <button class="btn__search"><img src="img/icon_search.svg" alt="magnifying glass for search" width="20" height="20"></button>
+                </div>
+              </form>
             </li>
-            <li class="topnav__item">
-              <a href="#" class="topnav__link" >Healthy Horizons</a>
-            </li>
-            <li class="topnav__item">
-              <a href="#" class="topnav__link" >Services</a>
-            </li>
-            <li class="topnav__item">
-              <a href="#" class="topnav__link" >About</a>
-            </li>
-            <li class="topnav__item">
-              <a href="#" class="topnav__link" >Our Promise</a>
+            <li class="topLinks__lang topnav__item topnav__link">
+              <span class="topLinks__lang--active">eng</span>/fre
             </li>
           </ul>
-         </nav>
+          </nav>
+          <!-- TOP NAVIGATION ENDS HERE -->
+
+          <!-- MAIN TOPNAV STARTS HERE -->
+          <nav>
+            <ul class="topnav__links">
+              <li class="topnav__item">
+                <a href="#" class="topnav__link" >In-Store <img class="topnav__caret" src="img/caret.svg" alt="submenu" height="12" width="12"></a>
+              </li>
+              <li class="topnav__item">
+                <a href="#" class="topnav__link" >Community <img src="img/caret.svg" alt="submenu" height="12" width="12"></a>
+              </li>
+              <li class="topnav__item">
+                <a href="#" class="topnav__link" >Our Promise</a>
+              </li>
+              <li class="topnav__item">
+                <a href="#" class="topnav__link" >Healthy Horizons <img src="img/caret.svg" alt="submenu" height="12" width="12"></a>
+              </li>
+              <li class="topnav__item">
+                <a href="#" class="topnav__link" >Services <img src="img/caret.svg" alt="submenu" height="12" width="12"></a>
+              </li>
+              <li class="topnav__item">
+                <a href="#" class="topnav__link" >About</a>
+              </li>
+            </ul>
+          </nav>
+          <!-- MAIN TOPNAV ENDS HERE -->
+          </div>
+        </div>
+
+        <!-- TOPNAV ENDS HERE -->
 
       </div>
 
     </header>
     <!-- ============================================== -->
+     
     <!-- MAIN
     =================================================== -->
+    <main id="main" class="site-content main" role="main">
+      <article>
+
+          <!-- HERO
+          =================================================== -->
+          <section class="full-width-split-screen hero__section--intro">
+            <div class="hero__section">
+              <h1 class="hero__text">
+                Your trusted community store.
+              </h1>
+            </div>
+            <img class="hero__image" src="img/ncr_hero_1600x944.jpg" alt="">
+
+          </section>
+          <!-- ============================================== -->
+
+          <!-- PROMO BOXES
+          =================================================== -->
+          <section class="wrapper promo__boxes">
+            <div class="col1">
+              <img src="img/promo_northy_608x320.jpg" alt="Promotional Northy the Bear" width="608" height="320">
+            </div>
+            <div class="col2">
+              <img src="img/promo_bingo_608x320.jpg" alt="Promotional Bingo Contest" width="608" height="320">
+            </div>
+          </section>
+          <!-- ============================================== -->
+
+          <!-- SAVING PROMO
+          =================================================== -->
+          <section class="inStore__promo">
+            <img class="savingProgram__fullWidth" src="img/savingPromo_price_drop_bkgd_1920x400.jpg" alt="" width="1920" height="400">
+          </section>
+          <!-- ============================================== -->
+
+          <!-- RECIPE
+          =================================================== -->
+          <section class="wrapper indexRecipes">
+            <div class="indexRecipe__image">
+              <img src="img/recipe_koreanBeef_1232x400.jpg" alt="plate of Korean Beef with Brocolli and Beef with Sesame Seeds" width="1232" height="400">
+            </div>
+            <div class="indexRecipe__textBlock">
+              <p class="indexRecipe__head">recipe</p>
+              <h2 class="indexRecipe__title">Korean Beef and Broccoli</h2>
+              <p class="indexRecipe__description">Serve this saucy meat dish over rice and broccoli.</p>
+              <p class="indexRecipe__link"><a href="#">view recipe &#10095;</a></p>
+            </div>
+          </section>
+          <!-- ============================================== -->
+
+          <!-- PROMO BOXES
+          =================================================== -->
+          <section class="wrapper promo__boxes">
+            <div class="col1">
+              <img src="img/promo_northy_608x320.jpg" alt="Promotional Northy the Bear" width="608" height="320">
+            </div>
+            <div class="col2">
+              <img src="img/promo_bingo_608x320.jpg" alt="Promotional Bingo Contest" width="608" height="320">
+            </div>
+          </section>
+          <!-- ============================================== -->
+
+          <!-- ADVOCACY
+          =================================================== -->
+            <section class="advocacy full-width-split-screen">
+              <img src="img/index_advocay_960x480.jpg" alt="">
+              <div class="advocacy__text">
+                <h2>Advocacy and Awareness</h2>
+                <h3>Orange Shirt Day</h3>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+              </div>
+            </section>
+
+          <!-- ============================================== -->
+
+        <!-- ============================================== -->
+      </article>
+    </main>
 
     <!-- FOOTER
     =================================================== -->

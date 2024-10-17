@@ -4,17 +4,133 @@
   background-color: var(--header-bg);
   box-shadow: 0 0 u.rem(24) var(--black);
 
-  &__homelink {
+  &__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
 
+    @include u.breakpoint-down(medium) {
+      justify-content: center;
+    }
+  }
+
+  &__branding {
+    background-color: var(--primaryBlue);
+    box-shadow: 0 0 u.rem(24) var(--black);
+    position: absolute;
+    top: 0;
+    left: 24px;
+    z-index: 999;
+  }
+
+  &__homelink {
+    display: inline-block;
   }
 
   &__logo {
+    padding: 72px 16px 12px;
 
+    &:hover {
+      opacity: 0.8;
+      transform: opacity 250ms ease-in-out;
+    }
+
+    img {
+      margin: u.rem(112) 0 u.rem(8);
+      padding: 0 u.rem(8);
+    }
+  }
+
+  &__open,
+  &__close {
+    background: transparent;
+    border: 0;
+  }
+
+  &__close {
+    display: none;
+
+    @include u.breakpoint-down(medium) {
+      display: block;
+      margin-inline-start: 200px;
+      margin-block-end: 150px;
+    }
+  }
+
+&__menu {
+  
+  @include u.breakpoint-down(small) {
+    inset: 0 0 auto 0;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 24px;
+    position: fixed;
+    outline: 2px solid yellow;
+  }
+}
+
+  &__navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 32px;
+    margin: 0;
+    padding: 0;
+
+    @include u.breakpoint-down(medium) {
+      // flex-direction: column;
+      // align-items: flex-start;
+      margin-bottom: u.rem(32);
+      padding-bottom: u.rem(32);
+      border-bottom: 2px solid var(--primaryBlue);
+    }
+
+    @include u.breakpoint-down(small) {
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: u.rem(16);
+      padding-bottom: u.rem(16);
+      border-bottom: 2px solid var(--primaryBlue);
+    }
+  }
+
+  &__navLinks {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: u.rem(32);
+    margin: 0;
+    padding: 16px 24px 16px 0;
+
+    @include u.breakpoint-down(medium) {
+      // margin-top: u.rem(100);
+      padding: 16px 24px;
+    }
+
+    @include u.breakpoint-down(small) {
+      width: 100%;
+    }
   }
 
   &__links {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
     margin: 0;
     padding: 0;
+
+    @include u.breakpoint-down(medium) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    @include u.breakpoint-down(small) {
+      align-items: flex-start;
+    }
   }
 
   &__item {
@@ -27,7 +143,18 @@
     letter-spacing: 0.05rem;
     color: var(--primaryBlue);
     text-decoration: none;
-    cursor: pointer;
+
+    &:hover {
+      color: var(--darkOrange);
+      text-decoration: underline;
+      text-decoration-thickness: 2px;
+      text-underline-offset: 6px;
+      cursor: pointer;
+    }
+  
+    &--icon {
+      margin-right: 10px;
+    }
   }
 }
 
