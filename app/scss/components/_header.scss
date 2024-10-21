@@ -1,18 +1,24 @@
 @use '../util' as u;
 
 .header {
-  width: 10vw;
-  height: auto;
+  width: 100vw;
+  max-height: u.rem(144);
   background-color: var(--white);
   box-shadow: 0 0 u.rem(24) var(--black);
+  border-radius: 0 0 20px 20px;
   z-index: 50;
+  // position: fixed
+
+  @include u.breakpoint-down(small) {
+
+  }
 
   &__site {
     width: 100%;
     height: auto;
     position: fixed;
-    background-color: var(--white);
-    box-shadow: 0 0 u.rem(24) var(--black);
+    // background-color: var(--white);
+    // box-shadow: 0 0 u.rem(24) var(--black);
   }
 
 }

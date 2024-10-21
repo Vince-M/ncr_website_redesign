@@ -4,6 +4,14 @@
 
   &__section {
     background-color: var(--darkBlue);
+    margin-top: u.rem(100);
+
+    @include u.breakpoint-down(small) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: u.rem(450);
+    }
 
     &--intro {
       // height: 100vh;
@@ -12,7 +20,9 @@
   }
 
   &__text {
-    font-size: 90px;
+    // font-size: 90px;
+    font-size: 3rem;
+    font-size: clamp(3rem, 1.50rem + 5vw, 5.5rem);
     line-height: 1;
     letter-spacing: 0.5px;
     color: var(--white);
@@ -20,13 +30,18 @@
     padding-left: 25px;
     margin-bottom: 0;
     display: block;
+
+
+    @include u.breakpoint-down(small) {
+      margin-top: u.rem(120);
+    }
   }
 
   &__image {
-    height: 90vh;
+    height: 100vh;
     // width: 100vw;
     object-fit: cover;
-    // margin-top: u.rem(144);
+    margin-top: u.rem(100);
   }
 }
 
