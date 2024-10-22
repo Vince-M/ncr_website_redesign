@@ -75,6 +75,10 @@
     margin-bottom: u.rem(80);
     padding: 0 u.rem(24);
 
+    @include u.breakpoint-down(small) {
+      flex-direction: column;
+    }
+
     p,
     ul {
       margin-bottom: 24px;
