@@ -11,6 +11,11 @@ html {
 	box-sizing: inherit;
 }
 
+a {
+	text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+}
+
 body {
 	margin: 0;
 	padding: 0;

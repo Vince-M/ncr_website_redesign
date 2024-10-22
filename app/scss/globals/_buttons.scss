@@ -1,9 +1,60 @@
 @use '../util' as u;
 
 .btn {
+  font-family: var(--font-text);
+  font-size: u.rem(18);
+  line-height: 1;
+  font-weight: 400;
+  text-align: center;
+  border-radius: 8px;
+  padding: 8px 32px;
+  margin: 0;
 
-  &__search {
-    border: 0;
-    background-color: var(--white);
+  &:hover {
+    cursor: pointer;
   }
+
+
+  &__advocacy {
+    color: var(--darkBlue);
+    background-color: var(--white);
+    border: 1px solid var(--white);
+    display: inline-block;
+
+    &:hover {
+      color: var(--darkBlue);
+      background-color: var(--primaryYellow);
+      border: 1px solid var(--primaryYellow);
+    }
+  }
+
+  &__hhf {
+    color: var(--white);
+    background-color: var(--darkBlue);
+    border: 1px solid var(--darkBlue);
+    display: inline-block;
+
+    &:hover {
+      color: var(--darkBlue);
+      background-color: var(--white);
+      border: 1px solid var(--darkBlue);
+    }
+  }
+
+  &__we {
+    color: var(--white);
+    background-color: var(--weFinancialDark);
+    border: 1px solid var(--weFinancialDark);
+    display: inline-block;
+
+    &:hover {
+      color: var(--darkBlue);
+      background-color: var(--weFinancial);
+      border: 1px solid var(--weFinancial);
+    }
+  }
+  // &__search {
+  //   border: 0;
+  //   background-color: var(--white);
+  // }
 }

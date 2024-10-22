@@ -4,7 +4,7 @@
 
   &__section {
     background-color: var(--darkBlue);
-    margin-top: u.rem(100);
+    // margin-top: u.rem(100);
 
     @include u.breakpoint-down(small) {
       display: flex;

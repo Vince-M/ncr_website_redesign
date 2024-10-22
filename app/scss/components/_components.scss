@@ -12,8 +12,6 @@
       flex-direction: column;
       align-items: center;
     }
-
-
   }
 }
 
@@ -63,5 +61,69 @@
       font-weight: 700;
       margin-bottom: u.rem(12);
     }
+  }
+}
+
+.site {
+
+  &__cards {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: u.rem(32);
+    margin-bottom: u.rem(80);
+    padding: 0 u.rem(24);
+
+    p,
+    ul {
+      margin-bottom: 24px;
+    }
+
+  }
+
+  .col1,
+  .col2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    }
+  
+
+  &__img {
+    margin-bottom: 24px;
+  }
+
+  &__text {
+    padding: 0 24px;
+
+    &--callout {
+      color: var(--primaryBlue);
+      font-weight: 700;
+    }
+  }
+}
+
+.hhf {
+
+  &__textLink {
+    color: var(--darkBlue);
+
+    &:hover {
+      color: var(--primaryOrange);
+    }
+  }
+}
+
+.we {
+
+  &__cardList ul li {
+    margin-bottom: 20px;
+  }
+
+  &__cardList li {
+    margin-bottom: 16px;
   }
 }
