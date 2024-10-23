@@ -3,11 +3,13 @@
 .header {
   width: 100vw;
   max-height: u.rem(144);
-  background-color: var(--white);
+  position: sticky;
+  top: 0;
+  background-color: var(--header-bg);
   box-shadow: 0 0 u.rem(24) var(--black);
-  border-radius: 0 0 20px 20px;
+  // border-radius: 0 0 20px 20px;
   z-index: 50;
-  // position: fixed
+  position: fixed;
 
   @include u.breakpoint-down(small) {
 
@@ -15,10 +17,15 @@
 
   &__site {
     width: 100%;
-    height: auto;
-    position: fixed;
+    height: u.rem(144);
+    // position: fixed;
     // background-color: var(--white);
     // box-shadow: 0 0 u.rem(24) var(--black);
+
+    @include u.breakpoint-down(small) {
+      height: u.rem(64);
+    }
+      
   }
 
 }

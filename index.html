@@ -33,65 +33,85 @@
     <header id="masthead" class="header header__site" role="header">
       
       <h2 class="visually-hidden">Header</h2>
-      <div class="topnav topnav__wrapper">
 
-        <!-- TOPNAV STARTS HERE -->
-        <div class="topnav__navLinks">
+        <div class="topnav topnav__wrapper">
 
-          <!-- SITE BRANDING STARTS HERE -->
-          <div class="topnav__branding">
-            <a href="index.html" class="topnav__homelink">
-              <img class="topnav__logo" src="img/ncr_brandHead.svg" alt="Northern/NorthMart homepage" width="176" height="102">
-            </a>
+        <!-- SITE BRANDING STARTS HERE -->
+          <div class="topnav__container">
+            <div class="topnav__branding">
+              <a href="index.html" class="topnav__homelink">
+                <img class="topnav__logo" src="img/ncr_brandHead.svg" alt="Northern/NorthMart homepage" width="176" height="102">
+              </a>
+            </div>
           </div>
-          <!-- SITE BRANDING ENDS HERE -->
+        <!-- SITE BRANDING ENDS HERE -->
 
-          <button class="topnav__open">
-            <img src="img/hamburger.svg" alt="" width="30" height="23">
-          </button>
+        <nav>
+          <span id="nav-label" hidden>Navigation</span>
 
-          <div class="topnav__menu">
+          <div class="topnav__navLinks">
+            <div class="topnav__overlay"></div>
+            
+              <button 
+                id="btnOpen"
+                class="topnav__open" 
+                aria-expanded="false" 
+                aria-labelledby="nav-label">
+                
+                <img src="img/hamburger.svg" alt="" width="30" height="23">
+              </button>
 
-            <button class="topnav__close">
-              <img src="img/close-button.svg" alt="" width="26" height="26">
-            </button>
+            <div 
+            id="menuTopNav"
+            class="topnav__menu" 
+            role="dialog" 
+            aria-labelledby="nav-label">
 
+              <button
+                id="btnClose"
+                class="topnav__close">
 
-          <!-- MAIN TOPNAV STARTS HERE -->
-          <nav>
-            <ul class="topnav__links">
-              <li class="topnav__item">
-                <a href="#" class="topnav__link" >In-Store <img class="topnav__caret" src="img/caret.svg" alt="submenu" height="12" width="12"></a>
-              </li>
-              <li class="topnav__item has-submenu">
-                <a href="#" class="topnav__link" >Community <img src="img/caret.svg" alt="submenu" height="12" width="12"></a>
-                <!-- <ul class="sub-menu">
-                  <li class="sub-menuItem"><a href="">Nutrition</a></li>
-                  <li class="sub-menuItem"><a href="">Recipes</a></li>
-                  <li class="sub-menuItem"><a href="">Health Tips</a></li>
-                  <li class="sub-menuItem"><a href="">Community Support</a></li>
-                </ul> -->
-              </li>
-              <li class="topnav__item">
-                <a href="#" class="topnav__link" >Our Promise</a>
-              </li>
-              <li class="topnav__item">
-                <a href="#" class="topnav__link" >Healthy Horizons <img src="img/caret.svg" alt="submenu" height="12" width="12"></a>
-              </li>
-              <li class="topnav__item">
-                <a href="#" class="topnav__link" >Services <img src="img/caret.svg" alt="submenu" height="12" width="12"></a>
-              </li>
-              <li class="topnav__item">
-                <a href="#" class="topnav__link" >About <img src="img/caret.svg" alt="submenu" height="12" width="12"></a>
-              </li>
-            </ul>
-          </nav>
-          <!-- MAIN TOPNAV ENDS HERE -->
+                <img src="img/close-button.svg" alt="" width="26" height="26">
+              </button>
+
+              <!-- MAIN TOPNAV STARTS HERE -->
+              <ul class="topnav__links">
+                <li class="topnav__item">
+                  <a href="#" class="topnav__link" >In-Store <img class="topnav__caret" src="img/caret.svg" alt="submenu" height="12" width="12"></a>
+                </li>
+                <li class="topnav__item has-submenu">
+                  <a href="#" class="topnav__link" >Community <img src="img/caret.svg" alt="submenu" height="12" width="12"></a>
+                  <!-- <ul class="sub-menu">
+                    <li class="sub-menuItem"><a href="">Nutrition</a></li>
+                    <li class="sub-menuItem"><a href="">Recipes</a></li>
+                    <li class="sub-menuItem"><a href="">Health Tips</a></li>
+                    <li class="sub-menuItem"><a href="">Community Support</a></li>
+                  </ul> -->
+                </li>
+                <li class="topnav__item">
+                  <a href="#" class="topnav__link" >Our Promise</a>
+                </li>
+                <li class="topnav__item">
+                  <a href="#" class="topnav__link" >Healthy Horizons <img src="img/caret.svg" alt="submenu" height="12" width="12"></a>
+                </li>
+                <li class="topnav__item">
+                  <a href="#" class="topnav__link" >Services <img src="img/caret.svg" alt="submenu" height="12" width="12"></a>
+                </li>
+                <li class="topnav__item">
+                  <a href="#" class="topnav__link" >About <img src="img/caret.svg" alt="submenu" height="12" width="12"></a>
+                </li>
+              </ul> <!-- topnav__links -->
+              <!-- MAIN TOPNAV ENDS HERE -->
+                
+            </div> <!-- topnav__menu -->
           </div>
-        </div>
-        <!-- TOPNAV ENDS HERE -->
 
-      </div>
+        </nav>
+
+
+        </div> <!-- topnav topnav__wrapper -->
+
+
 
     </header>
     <!-- ============================================== -->
