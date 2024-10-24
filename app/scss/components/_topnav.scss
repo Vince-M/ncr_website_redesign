@@ -151,6 +151,7 @@
       margin-bottom: u.rem(32);
       padding-bottom: u.rem(32);
       border-bottom: 2px solid var(--primaryBlue);
+      padding: u.rem(24);
     }
 
     @include u.breakpoint-down(small) {
