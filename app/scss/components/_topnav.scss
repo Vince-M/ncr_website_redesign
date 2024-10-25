@@ -97,7 +97,7 @@
     padding-top: u.rem(20);
     display: none;
 
-    @include u.breakpoint-down(small) {
+    @include u.breakpoint-down(medium) {
       display: block;
     }
 
@@ -129,11 +129,11 @@
   justify-content: space-between;
   gap: u.rem(32);
   
-  @include u.breakpoint-down(small) {
+  @include u.breakpoint-down(medium) {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
     // position: fixed;
     inset: 0 0 auto 0;
     background-color: var(--header-bg);

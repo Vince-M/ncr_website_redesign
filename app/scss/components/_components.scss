@@ -28,6 +28,10 @@
     width: 100%;
     height: auto;
     object-fit: cover;
+
+    @include u.breakpoint-down(small) {
+      height: u.rem(300);
+    }
   }
 }
 
@@ -73,10 +77,11 @@
     justify-content: center;
     gap: u.rem(32);
     margin-bottom: u.rem(80);
-    padding: 0 u.rem(24);
+    padding: 0;
 
     @include u.breakpoint-down(small) {
       flex-direction: column;
+      gap: 0;
     }
 
     p,
@@ -84,6 +89,12 @@
       margin-bottom: 24px;
     }
 
+  }
+
+  .col1 {
+    @include u.breakpoint-down(small) {
+      margin-bottom: u.rem(80);
+    }
   }
 
   .col1,

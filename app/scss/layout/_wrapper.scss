@@ -40,4 +40,10 @@
 	@include u.breakpoint(large) {
 		// padding-block: 60px;
 	}
+
+	&__footerNavigation {
+		@include u.breakpoint-down(small) {
+      padding: 0 u.rem(24);
+    }
+	}
 }

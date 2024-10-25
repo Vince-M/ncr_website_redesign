@@ -5,29 +5,37 @@
   color: var(--white);
   padding: u.rem(80) 0 u.rem(32);
 
-  &__nav,
-  &__siteNav ul {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-direction: row;
-    gap: u.rem(56);
-    width: min(100% - u.rem(30), u.rem(1280));
-    margin-inline: auto;
-    padding: 0 u.rem(24);
-
-    @include u.breakpoint-down(small) {
-      flex-direction: column;
-      margin-inline: 0;
-      padding: 0;
-    }
-  }
-
   &__nav {
     margin-bottom: u.rem(100);
 
     @include u.breakpoint-down(small) {
       margin-bottom: u.rem(32);
+    }
+  }
+
+  &__siteNav {
+    padding-bottom: u.rem(32);
+    border-bottom: 1px solid var(--white);
+    margin-bottom: u.rem(56);
+    padding: 0 u.rem(24);
+
+    @include u.breakpoint-down(medium) {
+      padding: 0;
+    }
+
+    @include u.breakpoint-down(small) {
+      padding: 0 0 u.rem(48);
+    }
+    
+    ul {
+      display: flex;
+      list-style-type: none;
+      margin: 0;
+      padding-left: 0;
+
+      @include u.breakpoint-down(small) {
+        gap: u.rem(16);
+      }
     }
   }
 
@@ -63,27 +71,33 @@
     }
   }
 
-  &__siteNav {
-    padding-bottom: u.rem(32);
-    border-bottom: 1px solid var(--white);
-    margin-bottom: u.rem(56);
+  &__nav,
+  &__siteNav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+    gap: u.rem(56);
+    width: min(100% - u.rem(30), u.rem(1280));
+    margin-inline: auto;
     padding: 0 u.rem(24);
 
     @include u.breakpoint-down(small) {
-      padding: 0 0 u.rem(48);
-    }
-    
-    ul {
-      display: flex;
-      list-style-type: none;
-      margin: 0;
-      padding-left: 0;
-
-      @include u.breakpoint-down(small) {
-        gap: u.rem(16);
-      }
+      flex-direction: column;
+      margin-inline: 0;
+      padding: 0;
     }
   }
+
+  &__siteNav > ul {
+    @include u.breakpoint-down(medium) {
+      font-size: u.rem(14);
+      width: 100%;
+      gap: 0;
+    }
+  }
+
+
 
   &__socialNav {
     margin-bottom: u.rem(72);

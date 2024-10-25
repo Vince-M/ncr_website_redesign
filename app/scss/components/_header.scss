@@ -11,8 +11,8 @@
   z-index: 50;
   position: fixed;
 
-  @include u.breakpoint-down(small) {
-
+  @include u.breakpoint-down(medium) {
+    max-height: u.rem(80);
   }
 
   &__site {
