@@ -23,14 +23,14 @@
     }
 
     &--intro {
-      // height: 100vh;
+      height: 100vh;
       margin-bottom: u.rem(80);
     }
 
     &--image {
-      // height: 100vh;
+      height: 100vh;
       width: 100%;
-      // object-fit: cover;
+      object-fit: cover;
       // margin-top: u.rem(100);
   
       @include u.breakpoint-down(medium) {
@@ -42,23 +42,26 @@
 
     &--index {
       width: 100%;
-      max-height: u.rem(432);
+      // max-height: u.rem(432);
       display: block;
       position: relative;
       overflow: hidden;
       margin: u.rem(80) 0;
-      // background-color: var(--darkBlue);
-      // margin-top: u.rem(100);
+      background-color: var(--darkBlue);
+      color: var(--white);
+      margin-top: u.rem(120);
+      width: 100%;
+  height: 90vh;
     }
 
     &--waystoSave {
       background-color: var(--lightYellow);
-      // margin-top: u.rem(100);
+      margin-top: u.rem(120);
     }
     &--community {
       background-color: var(--lightBlue);
       color: var(--primaryBlue);
-      // margin-top: u.rem(100);
+      margin-top: u.rem(120);
     }
   }
 
@@ -87,7 +90,7 @@
 }
 
     h1 {
-      color: var(--primaryBlue);
+      color: var(--white);
   margin-bottom: 0.25;
     }
     h2 {
