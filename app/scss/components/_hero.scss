@@ -3,13 +3,12 @@
 .hero {
 
   &__section {
-    margin: u.rem(80) 0;
+    margin: u.rem(112) 0;
     max-height: u.rem(560);
     overflow: hidden; 
 
     @include u.breakpoint-down(medium) {
       margin-top: u.rem(80);
-      // padding: u.rem(80);
       padding: 0;
       max-height: 100%;
     }
@@ -18,40 +17,49 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: u.rem(200) u.rem(40) u.rem(40);
+      // padding: u.rem(200) u.rem(40) u.rem(40);
       margin-top: 0;
     }
 
     &--intro {
-      height: 100vh;
-      margin-bottom: u.rem(80);
+      max-height: 90vh;
+    }
+
+    &__text {
+  
+      @include u.breakpoint-down(small) {
+        margin-top: u.rem(120);
+      }
     }
 
     &--image {
-      height: 100vh;
+      height: 100%;
       width: 100%;
       object-fit: cover;
       // margin-top: u.rem(100);
   
       @include u.breakpoint-down(medium) {
-        width: 100%;
-        height: auto;
+        // width: 100%;
+        height: 60%;
         margin-top: 0;
       }
     }
 
     &--index {
+      color: var(--white);
+      background-color: var(--darkBlue);
       width: 100%;
-      // max-height: u.rem(432);
       display: block;
       position: relative;
       overflow: hidden;
-      margin: u.rem(80) 0;
-      background-color: var(--darkBlue);
-      color: var(--white);
-      margin-top: u.rem(120);
+      margin: u.rem(115) 0;
       width: 100%;
-  height: 90vh;
+      height: 90vh;
+
+      @include u.breakpoint-down(small) {
+        margin: 0 0 u.rem(80);
+        max-height: 60%;
+      }
     }
 
     &--waystoSave {
@@ -61,8 +69,20 @@
     &--community {
       background-color: var(--lightBlue);
       color: var(--primaryBlue);
-      margin-top: u.rem(120);
+      // margin-top: u.rem(120);
     }
+  }
+
+  &__index {
+    font-size: u.rem(54);
+    font-size: clamp(u.rem(54), 2.10rem + 4.25vw, u.rem(88));
+    border-left: 20px solid var(--white);
+    color: var(--white);
+    display: block;
+    letter-spacing: .5px;
+    line-height: 1;
+    margin-bottom: 0;
+    padding-left: 25px;
   }
 
   &__text {
@@ -81,12 +101,12 @@
     // font-size: 90px;
     // line-height: 1;
     // margin-bottom: 0;
-    max-height: 432px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 110px 0 20px 2.5rem;
+    max-height: u.rem(560);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 110px 0 20px 2.5rem;
 }
 
     h1 {
@@ -99,9 +119,20 @@
   color: var(--primaryBlue);
     }
 
-
     @include u.breakpoint-down(small) {
       // margin-top: u.rem(120);
+    }
+
+    &__head {
+      font-size: u.rem(42);
+      font-size: clamp(u.rem(42), 2.10rem + 1.75vw, u.rem(56));
+      font-weight: 700;
+      margin-bottom: 0;
+    }
+
+    &__subhead {
+      font-size: u.rem(24);
+      font-weight: 500;
     }
   }
 
@@ -162,6 +193,7 @@
     grid-column: 2 / 3;
     padding-left: u.rem(24);
     padding-right: clamp(1rem, 5vw, 3rem);
+    // max-height: u.rem(560);
   }
 
   .full-width-split-screen > :not(img):last-child {
