@@ -3,7 +3,7 @@
 .hero {
 
   &__section {
-    margin: u.rem(112) 0;
+    margin: u.rem(16) 0;
     max-height: u.rem(560);
     overflow: hidden; 
 
@@ -71,6 +71,16 @@
       color: var(--primaryBlue);
       // margin-top: u.rem(120);
     }
+
+    &--healthyHorizons {
+      background-color: var(--lightGreen);
+      color: var(--darkGreen);
+    }
+
+    &--about {
+      background-color: var(--primaryBlue);
+      color: var(--white);
+    }
   }
 
   &__index {
@@ -101,7 +111,7 @@
     // font-size: 90px;
     // line-height: 1;
     // margin-bottom: 0;
-    max-height: u.rem(560);
+    // max-height: u.rem(560);
     display: flex;
     flex-direction: column;
     justify-content: center;

@@ -146,10 +146,111 @@
 .toc {
   margin-bottom: u.rem(80);
 
-  &__row1 {
-    display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  &__links {
+    color: var(--primaryBlue);
+    font-weight: 700;
+    padding: 1rem 0 0 1.25rem;
+
+    h3 {
+      font-size: u.rem(32);
+      font-weight: 700;
+    }
+
+    a {
+      color: var(--primaryBlue);
+      font-size: u.rem(20);
+      font-weight: 500;
+      text-decoration: underline;
+      text-underline-offset: 6px;
+      text-decoration-thickness: 2px;
+      text-decoration-color: var(--primaryBlue);
+
+      &:hover {
+        color: var(--primaryOrange);
+        text-decoration: none;
+      }
+    }
+  }
+
+  &__row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+
+
+    @include u.breakpoint-down(medium) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include u.breakpoint-down(small) {
+      grid-template-columns: 1fr;
+    }
+
+    &--links {
+      margin-bottom: u.rem(48);
+    }
+  }
+}
+
+.community {
+
+  &__intro {
+    background-color: var(--primaryBlue);
+    color: var(--white);
+    margin-bottom: u.rem(48);
+  }
+
+  &__content {
+    margin-bottom: u.rem(80);
+
+    h2 {
+      font-size: u.rem(40);
+      font-size: clamp(u.rem(40), u.rem(35) + 1vw, u.rem(48));
+      font-weight: 700;
+      color: var(--primaryBlue);
+      margin-bottom: u.rem(24);
+    }
+
+    &--rows {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      padding: 0 u.rem(24);
+      gap: u.rem(16);
+
+      @include u.breakpoint-down(small) {
+        grid-template-columns: 100%;
+      }
+    }
+
+  }
+}
+
+.hhf {
+
+  &__intro {
+    margin-bottom: u.rem(80);
+  }
+
+  &__textIntro {
+
+    h3 {
+      font-size: u.rem(32);
+      font-size: clamp(u.rem(32), u.rem(27) + 1vw, u.rem(40));
+      font-weight: 700;
+      color: var(--darkGreen);
+    }
+  }
+
+  &-subhead {
+    margin-top: u.rem(48);
+  }
+
+  &__bannerImg {
+    margin-bottom: u.rem(80);
+  }
+
+  &__runNorth {
+    background-color: var(--primaryGreen);
+    margin-bottom: u.rem(80);
   }
 }

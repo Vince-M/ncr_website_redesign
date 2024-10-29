@@ -56,3 +56,26 @@ blockquote {
 		border: 1px solid;
 	}
 }
+
+.breadcrumb {
+
+	&__section {
+		margin-bottom: u.rem(112);
+	}
+
+	&__active {
+		color: var(--primaryBlue);
+		font-weight: 700;
+		letter-spacing: 1px;
+		}
+
+		a {
+			color: var(--darkBlue);
+			text-decoration: underline;
+
+
+			&:hover {
+				color: var(--primaryOrange);
+			}
+		}
+}
