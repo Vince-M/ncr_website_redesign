@@ -198,6 +198,12 @@
     background-color: var(--primaryBlue);
     color: var(--white);
     margin-bottom: u.rem(48);
+    }
+
+    &__textIntro {
+      @include u.breakpoint-down(small) {
+        padding-top: 40px;
+      }
   }
 
   &__content {
@@ -219,6 +225,7 @@
 
       @include u.breakpoint-down(small) {
         grid-template-columns: 100%;
+        padding: 0;
       }
     }
 

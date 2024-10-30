@@ -62,3 +62,61 @@
     }
   }
 }
+
+.recipe {
+
+  &__intro {
+    margin-bottom: u.rem(80);
+  }
+
+  &__menu {
+
+  }
+
+  &__index {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin-bottom: u.rem(80);
+
+
+
+    &--card {
+      border: 1px solid var(--darkBlue);
+
+      &:hover {
+        box-shadow: 0 0 10px var(--darkBlue);
+      }
+    }
+
+    &--img {
+      width: 100%;
+    }
+
+    &--text {
+      padding: u.rem(24);
+    }
+
+
+    &--serves,
+    &--prep {
+      font-size: u.rem(18);
+      margin: 0;
+    }
+  }
+}
+
+.recipe__index--text a {
+  text-decoration: none;
+}
+
+a > .recipe__index--head {
+  font-size: u.rem(24);
+  margin-bottom: u.rem(16);
+  color: var(--darkBlue);
+  font-weight: 700;
+
+  &:hover {
+    color: var(--primaryOrange);
+  }
+}

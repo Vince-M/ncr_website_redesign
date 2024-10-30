@@ -14,6 +14,7 @@ html {
 a {
 	text-decoration-thickness: 1px;
   text-underline-offset: 4px;
+	cursor: pointer;
 }
 
 body {
@@ -39,28 +40,14 @@ blockquote {
 	margin: 0;
 }
 
-.visually-hidden {
-	position: absolute;
-	left: -10000px;
-	top: auto;
-	width: 1px;
-	height: 1px;
-	overflow: hidden;
-
-	&:focus {
-		left: 0;
-		width: auto;
-		height: auto;
-		background-color: #fff;
-		padding: 0.5rem;
-		border: 1px solid;
-	}
-}
-
 .breadcrumb {
 
 	&__section {
 		margin-bottom: u.rem(112);
+
+		@include u.breakpoint-down(small) {
+			margin-bottom: u.rem(48);
+		}
 	}
 
 	&__active {
@@ -78,4 +65,22 @@ blockquote {
 				color: var(--primaryOrange);
 			}
 		}
+}
+
+.visually-hidden {
+	position: absolute;
+	left: -10000px;
+	top: auto;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+
+	&:focus {
+		left: 0;
+		width: auto;
+		height: auto;
+		background-color: #fff;
+		padding: 0.5rem;
+		border: 1px solid;
+	}
 }

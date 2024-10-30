@@ -3,7 +3,7 @@
 .hero {
 
   &__section {
-    margin: u.rem(16) 0;
+    margin: u.rem(100) 0 u.rem(16);
     max-height: u.rem(560);
     overflow: hidden; 
 
@@ -11,6 +11,26 @@
       margin-top: u.rem(80);
       padding: 0;
       max-height: 100%;
+    }
+
+    &--fw {
+      background-repeat: no-repeat; 
+      background-position: top;
+      background-size: cover; 
+      left: 50%; 
+      padding: 0; 
+      position: relative;
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%);
+      margin-top: 100px; 
+      margin-bottom: 16px; 
+      height: 350px;
+      overflow: hidden; 
+      // clear: both;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: flex-end;
     }
 
     @include u.breakpoint-down(small) {
@@ -75,6 +95,60 @@
     &--healthyHorizons {
       background-color: var(--lightGreen);
       color: var(--darkGreen);
+    }
+
+    &--hhfAbout {
+      background-image: url(../img/hero_fw_hhfAbout_3840x1000.jpg);
+    }
+
+    &--recipes {
+      background-image: url(../img/hero-fw_recipes_3840x1000.webp);
+    }
+
+    &--hhfTextBkgd,
+    &--communityTextBkgd {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      width: 35%;
+      padding: 24px 24px 16px 24px;
+      margin-left: 10%;
+      margin-bottom: 20px;
+
+      h1 {
+        font-size: 48px;
+        margin-bottom: 0;
+      }
+
+      h2 {
+        font-size: 20px;
+        margin-bottom: 16px;
+      }
+    }
+
+    &--hhfTextBkgd {
+      background-color: var(--lightGreen);
+
+      h1 {
+        color: var(--darkGreen);
+      }
+
+      h2 {
+        color: var(--darkGreen);
+      }
+    }
+
+    &--communityTextBkgd {
+      background-color: var(--lightBlue);
+
+      h1 {
+        color: var(--primaryBlue);
+      }
+
+      h2 {
+        color: var(--primaryBlue);
+      }
     }
 
     &--about {
@@ -170,7 +244,7 @@
   @include u.breakpoint-down(small) {
     padding-block: 0;
     padding-inline: 0;
-    padding: u.rem(200) u.rem(40) u.rem(40);
+    padding: u.rem(200) u.rem(24) u.rem(40);
   }
 }
 

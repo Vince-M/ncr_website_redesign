@@ -41,6 +41,12 @@
 		// padding-block: 60px;
 	}
 
+	&__singleCol {
+		width: min(100% - u.rem(30), u.rem(648));
+		max-width: var(--wrapper-max-width);
+		margin-inline: auto;
+	}
+
 	&__footerNavigation {
 		@include u.breakpoint-down(small) {
       padding: 0 u.rem(24);
