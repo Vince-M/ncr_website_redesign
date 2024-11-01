@@ -240,12 +240,9 @@
 
   &__textIntro {
 
-    h3 {
-      font-size: u.rem(32);
-      font-size: clamp(u.rem(32), u.rem(27) + 1vw, u.rem(40));
-      font-weight: 700;
-      color: var(--darkGreen);
-    }
+    // h3 {
+    //   color: var(--darkGreen);
+    // }
   }
 
   &-subhead {
@@ -259,5 +256,35 @@
   &__runNorth {
     background-color: var(--primaryGreen);
     margin-bottom: u.rem(80);
+  }
+}
+
+.subpage {
+  
+  &__textIntro {
+
+  h3 {
+    font-size: u.rem(32);
+    font-size: clamp(u.rem(32), u.rem(27) + 1vw, u.rem(40));
+    font-weight: 700;
+  }
+
+  .hhf__subhead {
+    color: var(--darkGreen);
+  }
+
+  .ncr__subhead {
+    color: var(--primaryBlue);
+  }
+
+  }
+
+  &__ncrCol1 {
+    margin-bottom: u.rem(48);
+  }
+
+  &__ncrCol2 {
+    background-color: var(--lightBlue);
+    padding: u.rem(24);
   }
 }

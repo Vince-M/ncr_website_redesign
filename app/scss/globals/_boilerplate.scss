@@ -43,7 +43,7 @@ blockquote {
 .breadcrumb {
 
 	&__section {
-		margin-bottom: u.rem(112);
+		margin-bottom: u.rem(80);
 
 		@include u.breakpoint-down(small) {
 			margin-bottom: u.rem(48);
