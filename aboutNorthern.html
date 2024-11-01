@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Northern / NorthMart</title>
+
+  <link rel="icon" type="image/png" href="/favicon-48x48.png" sizes="48x48" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+
+  <link rel="stylesheet" href="dist/style.css">
+  <script defer src="dist/bodyScrollLock.min.js"></script>
+  <script defer src="dist/script.js"></script>
+
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  
+</head>
+
+<body class="home">
+  <div id="page" class="site">
+
+    <a href="#main" class="visually-hidden">Skip to main content</a>
+
+    <!-- HEADER / NAVIGATION SECTION START
+    =================================================== -->
+    <header id="masthead" class="header header__site" role="header">
+      
+      <h2 class="visually-hidden">Header</h2>
+
+      <div class="topnav topnav__wrapper">
+
+        <!-- SITE BRANDING STARTS HERE -->
+        <div class="topnav__container">
+          <div class="topnav__branding">
+            <a href="index.html" class="topnav__homelink">
+              <img class="topnav__logo" src="img/ncr_brandHead.svg" alt="Northern/NorthMart homepage" width="176" height="102">
+            </a>
+          </div>
+        </div>
+        <!-- SITE BRANDING ENDS HERE -->
+
+
+        <!-- TOP NAVIGATION STARTS HERE -->
+        <nav>
+          <span id="nav-label" hidden>Navigation</span>
+
+          <div class="topnav__navLinks">
+            <div class="topnav__overlay"></div>
+            
+              <button 
+                id="btnOpen"
+                class="topnav__open" 
+                aria-expanded="false" 
+                aria-labelledby="nav-label">
+                
+                <img src="img/hamburger.svg" alt="" width="30" height="23">
+              </button>
+
+            <div 
+            id="menuTopNav"
+            class="topnav__menu" 
+            role="dialog" 
+            aria-labelledby="nav-label">
+
+              <button
+                id="btnClose"
+                class="topnav__close">
+
+                <img src="img/close-button.svg" alt="" width="26" height="26">
+              </button>
+
+              <ul class="topnav__navigation">
+                <li class="topnav__location topnav__item">
+                  <a class="topnav__link" href="">
+                    <img  class="topnav__link--icon" src="img/icon_marker.svg" alt="" width="20" height="20"> 
+                    Location
+                  </a>
+                </li>
+                <li class="topnav__email topnav__item">
+                  <a class="topnav__link" href="">
+                    <img class="topnav__link--icon" src="img/icon_email.svg" alt="" width="22" height="22">
+                    email signup
+                  </a>
+                </li>
+                <li class="topnav__item">
+                  <form>
+                    <div>
+                      <input type="search" id="mySearch" class="mySearch" name="q">
+                      <button class="btn__search"><img src="img/icon_search.svg" alt="magnifying glass for search" width="20" height="20"></button>
+                    </div>
+                  </form>
+                </li>
+                <li class="topLinks__lang topnav__item topnav__link">
+                  <span class="topLinks__lang--active">eng</span>/fre
+                </li>
+              </ul>
+
+              <!-- MAIN TOPNAV STARTS HERE -->
+              <ul class="topnav__links">
+                <li class="topnav__item">
+                  <a href="#" class="topnav__link" >In-Store <img class="topnav__caret" src="img/caret.svg" alt="submenu" height="12" width="12"></a>
+                </li>
+                <li class="topnav__item">
+                  <a href="community.html" class="topnav__link" >Community</a>
+                </li>
+                <li class="topnav__item">
+                  <a href="#" class="topnav__link" >Our Promise</a>
+                </li>
+                <li class="topnav__item">
+                  <a href="healthyHorizons.html" class="topnav__link" >Healthy Horizons</a>
+                </li>
+                <li class="topnav__item">
+                  <a href="#" class="topnav__link" >Services</a>
+                </li>
+                <li class="topnav__item">
+                  <a href="about.html" class="topnav__link" >About</a>
+                </li>
+              </ul> <!-- topnav__links -->
+              <!-- MAIN TOPNAV ENDS HERE -->
+                
+            </div> <!-- topnav__menu -->
+          </div>
+
+        </nav>
+        <!-- TOP NAVIGATION ENDS HERE -->
+
+      </div> <!-- topnav topnav__wrapper -->
+
+    </header>
+    <!-- ============================================== -->
+     
+    <!-- MAIN
+    =================================================== -->
+    <main id="main" class="site-content main" role="main">
+      <article>
+
+        <!-- HERO
+        =================================================== -->
+        <section class="hero__section hero__section--fw hero__section--ncrAbout" role="banner">
+          <div class="hero__section--aboutTextBkgd">
+            <h1>About</h1>
+            <img src="img/NorthernNorthMart-rev-horiztal.svg" alt="" width="546" height="82">
+          </div>
+        </section>
+        <!-- ============================================== -->
+
+        <!-- BREADCRUMB
+        =================================================== -->
+        <div class="wrapper breadcrumb__section">
+          <div class="breadcrumb container row">
+            <p><a href="index.html">Home</a> / <a href="community.html" >About</a> /  <span class="breadcrumb__active">About Northern / NorthMart</span></p>
+          </div> <!-- breadcrumbs -->
+        </div>
+        <!-- ============================================== -->
+
+        <!-- CONTENT
+        =================================================== -->
+        <div class="wrapper community__content">
+          <div class="full-width-split-screen subpage__ncrCol1">
+            <div class="subpage__textIntro">
+              <h3 class="ncr__subhead">Northern Stores</h3>
+
+              <p>Northern is the original core store banner of The North West Company and today consists of 122 food and general merchandise stores serving remote, Northern Canadian communities. Northern is the first shopping choice in its markets thanks to consistently superior local selection, being in stock at the right time, helpful, friendly service and unwavering community support.</p>
+                
+                
+              <h3 class="ncr__subhead">NorthMart</h3>
+                
+              <p>NorthMart is a group of seven larger-size combination food and general merchandise stores especially created to serve regional centres in Canada’s North. Featuring an expanded range of fashion merchandise and fresh food, NorthMart is a destination for shoppers and comes closest to providing the breadth of quality and selection typically found in urban centres.</p>
+              
+            </div>
+            <img src="img/hhf_introImg_1216x1024.webp" alt="">
+          </div>
+
+          <div class="full-width-split-screen">
+            <img src="img/hhf_introImg_1216x1024.webp" alt="">
+            <div class="subpage__textIntro">
+
+              <div class="subpage__ncrCol2">
+                <h3 class="ncr__subhead">Food</h3>
+
+                <p>Northern and NorthMart stores offer a wide variety of food products including fresh produce, fresh and frozen meats, dairy products, deli foods, bakery items, groceries, and beverages. We carry a variety of healthy food choices throughout our stores.</p>
+                  
+                  
+                <h3 class="ncr__subhead">General Merchandise</h3>
+                  
+                <p>Northern and NorthMart stores are committed to offering a tailored assortment of general merchandise to the needs of the communities we serve. From small appliances to large televisions, mattresses and sofas to hardware needs, toys, and family basics, footwear and outerwear for the entire family, Northern strives to offer value and quality on every day needs. Northern is known for its great brands like Skidoo, Honda, Yamaha, and Lund, getting you around town, out on the water or on the land safely and reliably.</p>
+                
+              </div>
+              
+            </div>
+
+          </div>
+        </div>
+        <!-- ============================================== -->
+
+        <!-- RECIPE MENU -->
+         <div class="wrapper recipe__menu">
+
+        </div>
+        <!-- ============================================== -->
+
+        <!-- RECIPE INDEX
+        =================================================== -->
+
+        <!-- ============================================== -->
+
+        <!-- PAGINATION
+        =================================================== -->
+        <!-- ============================================== -->
+
+       <!-- PAGE LINKS - Community
+        =================================================== -->
+        <section class="toc">
+          <article class="toc__row">
+
+            <div class="community__toc--nutrition toc__row--links">
+              <img src="img/page_nnorthImg_1280x650.webp" alt="">
+              <div class="toc__links">
+                <h3>Nutrition North</h3>
+                <a href="#">[ External Link opens in a new window . . . ]</a>
+              </div>
+            </div>
+            <div class="community__toc--recipes toc__row--links">
+              <img src="img/page_recipeImg_1280x650.webp" alt="">
+              <div class="toc__links">
+                <h3>Recipes</h3>
+                <a href="recipes.html">[ Enjoy our Recipes . . . ]</a>
+            </div>
+            </div>
+            <div class="community__toc--healthTips toc__row--links">
+              <img src="img/page_healthImg_1280x650.webp" alt="">
+              <div class="toc__links">
+                <h3>Health Tips</h3>
+                <a href="#">[ Get Health with our Health Tips . . . ]</a>
+              </div>
+            </div>
+            <div class="community__toc--communitySupport toc__row--links">
+              <img src="img/page_communityImg_1280x650.webp" alt="">
+              <div class="toc__links">
+                <h3>Community Support</h3>
+                <a href="#">[ Learn about the Community . . . ]</a>
+              </div>
+            </div>
+            <div class="community__toc--optical toc__row--links">
+              <img src="img/page_opticalImg_1280x650.webp" alt="">
+              <div class="toc__links">
+                <h3>Optical</h3>
+                <a href="#">[ Learn more about Optical . . . ]</a>
+              </div>
+            </div>
+            <div class="community__toc--pharmacy toc__row--links">
+              <img src="img/page_pharmacyImg_1280x650.webp" alt="">
+              <div class="toc__links">
+                <h3>Pharmacy</h3>
+                <a href="#">[ Learn more about Pharmacy . . . ]</a>
+              </div>
+            </div>
+          </article>
+          <article class="toc_giftCards">
+          </article>
+          <article class="toc_whatsNew">
+          </article>
+        </section>
+        <!-- ============================================== -->
+
+        <!-- PROMO BOXES
+        =================================================== -->
+        <section class="wrapper promo__boxes">
+          <div class="col1">
+            <img src="img/promo_northy_608x320.jpg" alt="Promotional Northy the Bear" width="608" height="320">
+          </div>
+          <div class="col2">
+            <img src="img/promo_bingo_608x320.jpg" alt="Promotional Bingo Contest" width="608" height="320">
+          </div>
+        </section>
+        <!-- ============================================== -->
+
+        <!-- SAVING PROMO
+        =================================================== -->
+        <section class="inStore__promo">
+          <img class="savingProgram__fullWidth" src="img/savingPromo_price_drop_bkgd_1920x400.jpg" alt="" width="1920" height="400">
+        </section>
+        <!-- ============================================== -->
+
+        <!-- RECIPE
+        =================================================== -->
+        <section class="wrapper indexRecipes">
+          <div class="indexRecipe__image">
+            <img src="img/recipe_koreanBeef_1232x400.jpg" alt="plate of Korean Beef with Brocolli and Beef with Sesame Seeds" width="1232" height="400">
+          </div>
+          <div class="indexRecipe__textBlock">
+            <p class="indexRecipe__head">recipe</p>
+            <h2 class="indexRecipe__title">Korean Beef and Broccoli</h2>
+            <p class="indexRecipe__description">Serve this saucy meat dish over rice and broccoli.</p>
+            <p class="indexRecipe__link"><a href="#">view recipe &#10095;</a></p>
+          </div>
+        </section>
+        <!-- ============================================== -->
+
+        <!-- PROMO BOXES
+        =================================================== -->
+        <section class="wrapper promo__boxes">
+          <div class="col1">
+            <img src="img/promo_northy_608x320.jpg" alt="Promotional Northy the Bear" width="608" height="320">
+          </div>
+          <div class="col2">
+            <img src="img/promo_bingo_608x320.jpg" alt="Promotional Bingo Contest" width="608" height="320">
+          </div>
+        </section>
+        <!-- ============================================== -->
+
+        <!-- ADVOCACY
+        =================================================== -->
+        <section class="advocacy full-width-split-screen">
+          <img src="img/index_advocay_960x480.jpg" alt="">
+          <div class="advocacy__text">
+            <h2>Advocacy and Awareness</h2>
+            <h3>Orange Shirt Day</h3>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+            <div class="btn btn__advocacy">
+              Learn More
+            </div>
+          </div>
+
+        </section>
+        <!-- ============================================== -->
+
+        <!-- SITE CARDS
+        =================================================== -->
+        <section class="wrapper site__cards">
+          <div class="col1">
+            <img class="site__img" src="img/cards-hhf_1280x672.jpg" alt="Healthy Horizons Foundation" width="640" height="336">
+            <div class="site__text">
+              <p><span class="site__text--callout">The Healthy Horizons Foundation</span> is dedicated to improving the health and well-being of youth in the communities we serve through financial support and the motivation to advance their level of fitness, education, and health.</p>
+
+              <p>Your generosity will play an important role in our efforts to give youth in our communities a brighter and healthier future! <a class="hhf__textLink" href="#">[ View HHF ]</a> </p>
+              <div class="btn btn__hhf">
+                HHF Learn More
+              </div>
+            </div>
+          </div>
+          <div class="col2">
+            <img class="site__img"  src="img/cards-weFinancial_1280x672.jpg" alt="We Financial" width="640" height="336">
+            <div class="site__text">
+              <p>What does <span class="site__text--callout">We</span> mean? It's so simple, and yet it means so much. <span class="site__text--callout">We</span> reflects our dedication and connection to the community, has a sense of shared ownership with the customer, and is friendly and human.</p>
+
+              <ul class="we__cardList">
+                <li>You can use it for online shopping, and reserving airline tickets and hotels.</li>
+                <li>You can sign up for email alerts to notify you when your card has been loaded or when your balance is getting low.</li>
+                <li>You can get your balance online for free.</li>
+              </ul>
+              <div class="btn btn__we">
+                Visit We Financial
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- ============================================== -->
+
+      </article>
+    </main>
+
+    <!-- FOOTER
+    =================================================== -->
+    <footer id="#footer" class="footer" role="contentinfo">
+      <article>
+        <section class="wrapper footer__menu">
+          <div class="wrapper__footerNavigation">
+            <nav class="footer__nav">
+              <div class="footer__nav--about">
+                <h2>About</h2>
+                <ul>
+                  <li><a href="#">About Northern/NorthMart</a></li>
+                  <li><a href="#">Store Locator</a></li>
+                  <li><a href="#">Careers</a></li>
+                  <li><a href="#">Talk to us</a></li>
+                </ul>
+              </div>
+              <div class="footer__nav--services">
+                <h2>Services</h2>
+                <ul>
+                  <li><a href="#">We Financial</a></li>
+                  <li><a href="#">In-Store Services</a></li>
+                  <li><a href="#">Quickstop</a></li>
+                  <li><a href="#">Deli</a></li>
+                  <li><a href="#">MotorSports</a></li>
+                  <li><a href="#">Optical</a></li>
+                  <li><a href="#">Pharmacy</a></li>
+                </ul>
+              </div>
+              <div class="footer__nav--hhf">
+                <h2>Healthy Horizons</h2>
+                <ul>
+                  <li><a href="#">About Healthy Horizons</a></li>
+                  <li><a href="#">Success Stories</a></li>
+                  <li><a href="#">Apply for Funding</a></li>
+                  <li><a href="#">FAQs</a></li>
+                  <li><a href="#">Contact Healthy Horizons</a></li>
+                </ul>
+              </div>
+              <div class="footer__nav--community">
+                <h2>Community</h2>
+                <ul>
+                  <li><a href="#">Nutrition North</a></li>
+                  <li><a href="#">Recipes</a></li>
+                  <li><a href="#">Health Tips</a></li>
+                  <li><a href="#">Community Support</a></li>
+                  <li><a href="#">News</a></li>
+                </ul>
+              </div>
+
+            </nav>
+            <nav class="footer__siteNav">
+              <ul>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Legal & Privacy</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Media</a></li>
+                <li><a href="#">Accessibility Statement</a></li>
+                <li><a href="#">Talk to us</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="footer__social wrapper__social">
+            <nav class="footer__socialNav">
+              <h2>
+                Follow us
+              </h2>
+              <ul>
+                <li><a href="#">
+                  <svg class="socialIcon" id="Facebook_reverse" xmlns="http://www.w3.org/2000/svg" width="28" height="28.056" viewBox="0 0 28 28.056">
+                    <path class="socialIcon" id="Path_6" data-name="Path 6" d="M31.338,4.956H6.462A1.559,1.559,0,0,0,4.9,6.518V31.394a1.559,1.559,0,0,0,1.562,1.562H19.848V22.135H16.223V17.9h3.625V14.773c0-3.625,2.231-5.578,5.41-5.578s2.845.112,3.235.167v3.793H26.263c-1.729,0-2.064.837-2.064,2.064V17.9h4.183l-.558,4.239H24.2V32.956h7.139A1.559,1.559,0,0,0,32.9,31.394V6.462A1.559,1.559,0,0,0,31.338,4.9" transform="translate(-4.9 -4.9)" fill="#fff"/>
+                  </svg>
+                </a></li>
+                <li><a href="#"><svg id="YouTube_reverse" xmlns="http://www.w3.org/2000/svg" width="28" height="19.19" viewBox="0 0 28 19.19">
+                  <path class="socialIcon" id="Path_5" data-name="Path 5" d="M33.1,28.106a4,4,0,0,1-3.984,3.984H9.084A4,4,0,0,1,5.1,28.106V16.884A4,4,0,0,1,9.084,12.9H29.06a4,4,0,0,1,3.984,3.984V28.106ZM16.154,25.918l7.575-3.928-7.575-3.928Z" transform="translate(-5.1 -12.9)" fill="#fff"/>
+                </svg>
+                </a></li>
+                <li><a href="#"><svg id="Instagram_reverse" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
+                  <path class="socialIcon" id="Path_7" data-name="Path 7" d="M29.652,16.816H27.244a8.863,8.863,0,0,1,.28,2.128,8.624,8.624,0,0,1-17.248,0c0-4.76.112-1.456.28-2.128H8.148V28.632A1.063,1.063,0,0,0,9.212,29.7h19.32A1.063,1.063,0,0,0,29.6,28.632V16.816Zm0-7.5a1.063,1.063,0,0,0-1.064-1.064H25.34a1.063,1.063,0,0,0-1.064,1.064V12.56a1.063,1.063,0,0,0,1.064,1.064h3.248a1.063,1.063,0,0,0,1.064-1.064ZM18.9,13.624A5.376,5.376,0,1,0,24.276,19,5.377,5.377,0,0,0,18.9,13.624m10.752,19.32H8.148A3.25,3.25,0,0,1,4.9,29.7V8.248A3.25,3.25,0,0,1,8.148,5h21.5A3.25,3.25,0,0,1,32.9,8.248v21.5A3.25,3.25,0,0,1,29.652,33" transform="translate(-4.9 -5)" fill="#fff" fill-rule="evenodd"/>
+                </svg></a></li>
+                <li><a href="#"><svg class="socialIcon" id="LInkedIn_reverse" xmlns="http://www.w3.org/2000/svg" width="27.995" height="28.107" viewBox="0 0 27.995 28.107">
+                  <g id="Group_7" data-name="Group 7">
+                    <path class="socialIcon" id="Path_8" data-name="Path 8" d="M5.449,14.413h5.835V33.151H5.449ZM8.366,5.1A3.366,3.366,0,1,1,5,8.466,3.376,3.376,0,0,1,8.366,5.1" transform="translate(-5 -5.1)" fill="#fff"/>
+                    <path class="socialIcon" id="Path_9" data-name="Path 9" d="M22.612,21.349h5.554V23.93h.056a6.173,6.173,0,0,1,5.5-3.03c5.891,0,6.957,3.871,6.957,8.92V40.087H34.843V31c0-2.188,0-4.937-3.03-4.937s-3.478,2.356-3.478,4.825v9.257H22.5V21.349Z" transform="translate(-12.682 -12.036)" fill="#fff"/>
+                  </g>
+                </svg>
+                </a></li>
+                <li><a href="#"><svg class="socialIcon" id="X__x28_Twitter_x29__reverse" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
+                  <g id="Group_8" data-name="Group 8">
+                    <path class="socialIcon" id="Path_10" data-name="Path 10" d="M18.6,17.6l12.914,18H34.5l-12.984-18Z" transform="translate(-12.528 -12.56)" fill="#fff"/>
+                    <path class="socialIcon" id="Path_11" data-name="Path 11" d="M19,5A14,14,0,1,0,33,19,14.005,14.005,0,0,0,19,5Zm3.472,22.176-4.76-6.384-5.88,6.384H10.32l6.72-7.28-6.72-8.96h5.152l4.368,5.88,5.432-5.88h1.512l-6.272,6.776,7.056,9.464H22.416Z" transform="translate(-5 -5)" fill="#fff"/>
+                  </g>
+                </svg></a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="footer__info">
+            <div class="footer__info--branding">
+              <img src="img/footer_branding.svg" alt="">
+            </div>
+            <div class="footer__info--copyright">
+              <p>Copyright @ 2024 The North West Company - Northern NorthMart</p>
+            </div>
+          </div>
+        </section>
+      </article>
+    </footer>
+    <!-- ============================================== -->
+  </div>
+</body>
+</html>
