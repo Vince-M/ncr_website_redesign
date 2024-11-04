@@ -113,7 +113,8 @@
 
     &--hhfTextBkgd,
     &--communityTextBkgd,
-    &--aboutTextBkgd {
+    &--aboutTextBkgd,
+    &--priceDropBkgd {
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -165,6 +166,16 @@
         color: var(--white);
       }
     }
+
+    &--priceDropBkgd {
+      background-color: var(--lightYellow);
+
+      h1,
+      h2 {
+        color: var(--primaryBlue);
+      }
+    }
+
 
     &--about {
       background-color: var(--primaryBlue);
