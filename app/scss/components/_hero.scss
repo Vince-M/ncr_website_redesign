@@ -84,8 +84,10 @@
 
     &--waystoSave {
       background-color: var(--lightYellow);
-      margin-top: u.rem(120);
+      color: var(--primaryBlue);
+      // margin-top: u.rem(120);
     }
+
     &--community {
       background-color: var(--lightBlue);
       color: var(--primaryBlue);

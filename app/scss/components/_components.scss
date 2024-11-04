@@ -197,7 +197,7 @@
   &__intro {
     background-color: var(--primaryBlue);
     color: var(--white);
-    margin-bottom: u.rem(48);
+    margin-bottom: u.rem(80);
     }
 
     &__textIntro {
@@ -284,7 +284,7 @@
   }
 
   &__ncrCol2 {
-    background-color: var(--lightBlue);
-    padding: u.rem(24);
+    // background-color: var(--lightBlue);
+    // padding: u.rem(24);
   }
 }

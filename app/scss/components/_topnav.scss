@@ -241,7 +241,8 @@
       font-size: u.rem(16);
     }
 
-    &:hover {
+    &:hover,
+    &:active {
       color: var(--darkOrange);
       text-decoration: underline;
       text-decoration-thickness: 2px;
