@@ -52,7 +52,7 @@
           <span id="nav-label" hidden>Navigation</span>
 
           <div class="topnav__navLinks">
-            <div class="topnav__overlay"></div>
+            <div id="overlay" class="topnav__overlay"></div>
             
               <button 
                 id="btnOpen"
@@ -104,22 +104,27 @@
 
               <!-- MAIN TOPNAV STARTS HERE -->
               <ul class="topnav__links">
-                <li class="topnav__item">
+                <li class="topnav__item nav__item has-submenu">
                   <a href="#" class="topnav__link" >In-Store <img class="topnav__caret" src="img/caret.svg" alt="submenu" height="12" width="12"></a>
+                  <ul class="submenu">
+                    <li class="subitem"><a role="menuitem" href="waystosave.html">Ways to Save</a></li>
+                    <li class="subitem"><a role="menuitem" href="#">Food</a></li>
+                    <li class="subitem"><a role="menuitem" href="#">Home & Lifestyle</a></li>
+                  </ul>
                 </li>
-                <li class="topnav__item">
+                <li class="topnav__item nav__item">
                   <a href="community.html" class="topnav__link" >Community</a>
                 </li>
-                <li class="topnav__item">
+                <li class="topnav__item nav__item">
                   <a href="#" class="topnav__link" >Our Promise</a>
                 </li>
-                <li class="topnav__item">
+                <li class="topnav__item nav__item">
                   <a href="healthyHorizons.html" class="topnav__link" >Healthy Horizons</a>
                 </li>
-                <li class="topnav__item">
+                <li class="topnav__item nav__item">
                   <a href="#" class="topnav__link" >Services</a>
                 </li>
-                <li class="topnav__item">
+                <li class="topnav__item nav__item">
                   <a href="about.html" class="topnav__link" >About</a>
                 </li>
               </ul> <!-- topnav__links -->
@@ -192,21 +197,6 @@
 
           </div>
         </div>
-        <!-- ============================================== -->
-
-        <!-- RECIPE MENU -->
-         <div class="wrapper recipe__menu">
-
-        </div>
-        <!-- ============================================== -->
-
-        <!-- RECIPE INDEX
-        =================================================== -->
-
-        <!-- ============================================== -->
-
-        <!-- PAGINATION
-        =================================================== -->
         <!-- ============================================== -->
 
        <!-- PAGE LINKS - Community
@@ -283,7 +273,7 @@
         </section>
         <!-- ============================================== -->
 
-        <!-- RECIPE
+        <!-- RECIPE CARD
         =================================================== -->
         <section class="wrapper indexRecipes">
           <div class="indexRecipe__image">
@@ -335,7 +325,7 @@
               <p><span class="site__text--callout">The Healthy Horizons Foundation</span> is dedicated to improving the health and well-being of youth in the communities we serve through financial support and the motivation to advance their level of fitness, education, and health.</p>
 
               <p>Your generosity will play an important role in our efforts to give youth in our communities a brighter and healthier future! <a class="hhf__textLink" href="#">[ View HHF ]</a> </p>
-              <div class="btn btn__hhf">
+              <div class="btn btn__primary">
                 HHF Learn More
               </div>
             </div>

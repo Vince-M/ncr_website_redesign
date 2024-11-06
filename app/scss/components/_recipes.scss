@@ -70,7 +70,66 @@
   }
 
   &__menu {
+    font-size: u.rem(20);
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: u.rem(60);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: u.rem(24);
 
+    &--all {
+      color: var(--primaryBlue);
+      grid-column: span 3;
+    }
+    &--breakfast {
+      color: var(--primaryGreen);
+    }
+    &--lunch {
+      color: var(--primaryRed);
+    }
+    &--dinner {
+      color: var(--darkYellow);
+    }
+    &--soups {
+      color: var(--darkOrange);
+    }
+    &--sides {
+      color: var(--darkBlue);
+    }
+    &--snacks {
+      color: var(--darkGreen);
+    }
+  }
+
+  &__dot {
+    height: u.rem(20);
+    width: u.rem(20);
+    border-radius: 50%;
+    display: inline-block;
+
+    &--all {
+      background-color: var(--primaryBlue);
+    }
+    &--breakfast {
+      background-color: var(--primaryGreen);
+    }
+    &--lunch {
+      background-color: var(--primaryRed);
+    }
+    &--dinner {
+      background-color: var(--darkYellow);
+    }
+    &--soups {
+      background-color: var(--darkOrange);
+    }
+    &--sides {
+      background-color: var(--darkBlue);
+    }
+    &--snacks {
+      background-color: var(--darkGreen);
+    }
   }
 
   &__index {

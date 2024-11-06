@@ -1,6 +1,7 @@
 // console.log('HELLO');
 
 const main = document.querySelector('#main');
+const body = document.querySelector('body');
 const footer = document.querySelector('#footer');
 const btnOpen = document.querySelector('#btnOpen');
 const btnClose = document.querySelector('#btnClose');
@@ -56,3 +57,34 @@ function closeMobileMenu() {
   }, 500);
 }
 
+
+
+// Submenu
+function toggleItem() {
+  if (this.classList.contains("sub-menu-active")) {
+    this.classList.remove("sub-menu-active");
+  } else if (menu.querySelector(".sub-menu-active")) {
+    menu.querySelector(".sub-menu-active").classList.remove("sub-menu-active");
+    this.classList.add("sub-menu-active");
+  } else {
+    this.classList.add("sub-menu-active");
+  }
+}
+
+for (let nav__item of nav__items) {
+  if (nav__item.querySelector(".sub-menu")) {
+    nav__item.addEventListener("click", toggleItem, false);
+    nav__item.addEventListener("keypress", toggleItem, false);
+  }
+}
+
+// Close submenu from anywhere on page
+function closeSubmenu(e) {
+  let isClickInside = menu.contains(e.target);
+
+  if (!isClickInside && menu.querySelector(".sub-menu-active")) {
+    menu.querySelector(".submenu-active").classList.remove("sub-menu-active");
+  }
+}
+
+document.addEventListener("click", closeSubmenu, false);
