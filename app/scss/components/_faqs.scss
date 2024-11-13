@@ -1,0 +1,56 @@
+@use '../util' as u;
+
+.faqs {
+  background-color: var(--lightGreen);
+  border: 1px solid var(--darkBlue);
+  border-radius: u.rem(10);
+  margin-bottom: u.rem(80);
+
+  &__accordian {
+
+    details > summary {
+      font-size: u.rem(20);
+      font-weight: 700;
+      color: var(--darkBlue);
+
+      &:hover {
+        color: var(--primaryBlue);
+        cursor: pointer;
+        text-decoration: underline;
+      }
+    }
+    
+    details > p {
+    font-size: u.rem(16);
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 0;
+    color: var(--black);
+    padding: u.rem(24) u.rem(16) u.rem(24) u.rem(60);
+    }
+    
+    details > h3 {
+    font-size: u.rem(18);
+    font-weight: 700;
+    color: var(--darkBlue);
+    padding: 0 u.rem(24);
+    }
+    
+    details > ul {
+    margin-top: u.rem(8);
+    padding: 0 u.rem(16) u.rem(24) u.rem(60);
+    }
+    
+    details > ul li {
+    margin-bottom: u.rem(8);
+    }
+  }
+
+  &__details {
+    padding: u.rem(16) u.rem(24);
+    border-bottom: 1px solid var(--darkBlue);
+  }
+}
+
+
+

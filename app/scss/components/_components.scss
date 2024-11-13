@@ -152,17 +152,17 @@
     padding: 1rem 0 0 1.25rem;
 
     h3 {
-      font-size: u.rem(32);
+      font-size: u.rem(24);
       font-weight: 700;
     }
 
     a {
       color: var(--primaryBlue);
-      font-size: u.rem(20);
+      font-size: u.rem(16);
       font-weight: 500;
       text-decoration: underline;
       text-underline-offset: 6px;
-      text-decoration-thickness: 2px;
+      text-decoration-thickness: 1px;
       text-decoration-color: var(--primaryBlue);
 
       &:hover {
@@ -220,8 +220,8 @@
     &--rows {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      padding: 0 u.rem(24);
-      gap: u.rem(16);
+      // padding: 0 u.rem(24);
+      gap: u.rem(32);
 
       @include u.breakpoint-down(small) {
         grid-template-columns: 100%;
@@ -254,7 +254,7 @@
   }
 
   &__runNorth {
-    background-color: var(--primaryGreen);
+    background-color: var(--lightGreen);
     margin-bottom: u.rem(80);
   }
 }
@@ -286,5 +286,68 @@
   &__ncrCol2 {
     // background-color: var(--lightBlue);
     // padding: u.rem(24);
+  }
+
+  &__content {
+    margin-bottom: u.rem(80);
+  }
+}
+
+
+.content {
+
+  &__intro {
+    margin-bottom: u.rem(80);
+
+    &--community {
+      background-color: var(--primaryBlue);
+    }
+
+    &--healthyHorizons {
+      color: var(--white);
+      background-color: var(--darkGreen);
+    }
+
+    &--waystoSave{
+      background-color: var(--yellow);
+      color: var(--black);
+    }
+
+    &--aboutNorthern {
+      background-color: var(--primaryBlue);
+
+      h2 {
+        font-size: u.rem(40);
+        font-size: clamp(u.rem(40), u.rem(35) + 1vw, u.rem(48));
+        font-weight: 700;
+        color: var(--primaryBlue);
+        margin-bottom: u.rem(24);
+      }
+    }
+
+    &__textIntro {
+      @include u.breakpoint-down(small) {
+        padding-top: 40px;
+      }
+    }
+
+    &__content {
+      margin-bottom: u.rem(80);
+
+
+
+      &--rows {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 u.rem(24);
+        gap: u.rem(16);
+
+        @include u.breakpoint-down(small) {
+          grid-template-columns: 100%;
+          padding: 0;
+        }
+      }
+
+    }
   }
 }

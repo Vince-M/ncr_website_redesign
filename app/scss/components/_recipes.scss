@@ -69,11 +69,17 @@
     margin-bottom: u.rem(80);
   }
 
+  &__description {
+    margin-bottom: u.rem(40);
+  }
+
   &__menu {
     font-size: u.rem(20);
     font-weight: 700;
     letter-spacing: 1px;
-    margin-bottom: u.rem(60);
+    margin-bottom: u.rem(80);
+    border-top: 1px solid var(--primaryBlue);
+    padding-top: u.rem(40);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
