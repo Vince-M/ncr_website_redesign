@@ -130,6 +130,36 @@
       color: var(--primaryOrange);
     }
   }
+
+  &__questions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: u.rem(80);
+    color: var(--primaryBlue);
+    
+    h2 {
+      font-size: u.rem(32);
+      font-size: clamp(u.rem(32), u.rem(24) + 2vw, u.rem(48));
+      font-weight: 700;
+      margin: 0 0 u.rem(16)0 ;
+    }
+
+    h3 {
+      font-size: u.rem(32);
+      font-size: clamp(u.rem(32), u.rem(28) + 1vw, u.rem(40));
+      font-weight: 700;
+      margin-right: u.rem(48);
+    }
+
+    &--contact {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+  }
 }
 
 .we {
@@ -186,9 +216,9 @@
       grid-template-columns: 1fr;
     }
 
-    &--links {
-      margin-bottom: u.rem(48);
-    }
+    // &--links {
+    //   margin-bottom: u.rem(48);
+    // }
   }
 }
 

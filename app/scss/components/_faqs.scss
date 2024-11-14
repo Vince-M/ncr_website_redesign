@@ -26,7 +26,7 @@
     line-height: 1.5;
     margin-bottom: 0;
     color: var(--black);
-    padding: u.rem(24) u.rem(16) u.rem(24) u.rem(60);
+    padding: u.rem(16);
     }
     
     details > h3 {
@@ -47,7 +47,7 @@
   }
 
   &__details {
-    padding: u.rem(16) u.rem(24);
+    padding: u.rem(8) u.rem(16);
     border-bottom: 1px solid var(--darkBlue);
   }
 }

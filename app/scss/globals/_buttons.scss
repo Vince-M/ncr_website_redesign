@@ -7,8 +7,9 @@
   font-weight: 400;
   text-align: center;
   border-radius: 8px;
-  padding: 8px 32px 10px;
+  padding: 10px 32px 10px;
   margin: 0;
+  display: inline-block;
 
   &:hover {
     cursor: pointer;
@@ -19,7 +20,6 @@
     color: var(--darkBlue);
     background-color: var(--white);
     border: 1px solid var(--white);
-    display: inline-block;
 
     &:hover {
       color: var(--darkBlue);
@@ -32,7 +32,6 @@
     color: var(--white);
     background-color: var(--darkBlue);
     border: 1px solid var(--darkBlue);
-    display: inline-block;
 
     &:hover {
       color: var(--darkBlue);
@@ -41,11 +40,32 @@
     }
   }
 
+  &__secondary {
+    color: var(--white);
+    background-color: var(--primaryBlue);
+    border: 1px solid var(--primaryBlue);
+
+    &:hover {
+      color: var(--primaryBlue);
+      background-color: var(--white);
+    }
+  }
+
+  &__tertiary {
+    color: var(--white);
+    background-color: var(--darkRed);
+    border: 1px solid var(--darkRed);
+
+    &:hover {
+      color: var(--darkRed);
+      background-color: var(--white);
+    }
+  }
+
   &__we {
     color: var(--white);
     background-color: var(--weFinancialDark);
     border: 1px solid var(--weFinancialDark);
-    display: inline-block;
 
     &:hover {
       color: var(--darkBlue);

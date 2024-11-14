@@ -5,6 +5,27 @@
   color: var(--white);
   padding: u.rem(80) 0 u.rem(32);
 
+  &__bar {
+    background-color: var(--primaryYellow);
+  }
+
+  &__barContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+      font-family: var(--font-heading);
+      font-size: u.rem(24);
+      font-size: clamp( u.rem(24), u.rem(20) + 1vw, u.rem(32));
+      font-weight: 700;
+      color: var(--darkBlue);
+      margin: 0 u.rem(32) 0 0;
+      padding: u.rem(32) 0;
+    }
+  }
+
   &__nav {
     margin-bottom: u.rem(100);
 
