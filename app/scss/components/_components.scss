@@ -207,7 +207,6 @@
     grid-template-columns: repeat(3, 1fr);
 
 
-
     @include u.breakpoint-down(medium) {
       grid-template-columns: repeat(2, 1fr);
     }
@@ -216,9 +215,9 @@
       grid-template-columns: 1fr;
     }
 
-    // &--links {
-    //   margin-bottom: u.rem(48);
-    // }
+    &--links {
+      margin-bottom: u.rem(40);
+    }
   }
 }
 
