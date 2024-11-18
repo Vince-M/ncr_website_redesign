@@ -344,6 +344,7 @@
 
     &--aboutNorthern {
       background-color: var(--primaryBlue);
+      color: var(--white);
 
       h2 {
         font-size: u.rem(40);
@@ -351,6 +352,10 @@
         font-weight: 700;
         color: var(--primaryBlue);
         margin-bottom: u.rem(24);
+      }
+
+      strong {
+        color: var(--white);
       }
     }
 
@@ -379,9 +384,16 @@
 
     }
   }
+  
 }
 
 
 .full-width-split-screen .intro {
   padding-top: 60px;
+}
+
+ div.textIntro {
+  @include u.breakpoint-down(small) {
+    padding-top: 30px;
+  }
 }

@@ -100,6 +100,8 @@
     @include u.breakpoint-down(medium) {
       display: flex;
       justify-content: flex-end;
+      width: 100%;
+      margin: 0 u.rem(40) 0 0;
     }
 
       &[aria-expanded='true'] + .topnav__menu {

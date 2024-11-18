@@ -46,7 +46,7 @@ blockquote {
 		margin-bottom: u.rem(80);
 
 		@include u.breakpoint-down(small) {
-			margin-bottom: u.rem(48);
+			margin-bottom: u.rem(16);
 		}
 	}
 

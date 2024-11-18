@@ -144,6 +144,10 @@
     gap: 16px;
     margin-bottom: u.rem(80);
 
+    @include u.breakpoint-down(small) {
+      grid-template-columns: 1fr;
+    }
+
     &--card {
       border: 1px solid var(--darkBlue);
 

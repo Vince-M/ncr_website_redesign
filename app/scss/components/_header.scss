@@ -12,7 +12,7 @@
   position: fixed;
 
   @include u.breakpoint-down(medium) {
-    max-height: u.rem(80);
+    height: u.rem(104);
   }
 
   &__site {
