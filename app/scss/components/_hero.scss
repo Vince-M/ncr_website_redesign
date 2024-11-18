@@ -264,8 +264,6 @@
     }
   }
 
-
-
 .hero.full-width-split-screen {
   padding-top: 144px;
 }
@@ -273,6 +271,11 @@
 .full-width-split-screen {
   padding-block: 0;
 }
+
+figure.priceDrop-cashscreen {
+  padding-top: 0 !important;
+}
+
 
 .full-width-split-screen > :not(img) {
   padding-block: var(--wrapper-padding-block);
@@ -290,6 +293,10 @@
     padding-inline: 0;
     padding: u.rem(200) u.rem(24) u.rem(40);
   }
+}
+
+.full-width-split-screen > :not(img) .priceDrop-cashscreen {
+  padding-top: 0;
 }
 
 @media (min-width: 930px) {
