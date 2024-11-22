@@ -5,13 +5,13 @@
   height: auto;
   position: relative;
   margin-bottom: u.rem(80);
+
+  @include u.breakpoint-down(small) {
+    margin-bottom: u.rem(40);
+  }
 }
 
 .indexRecipe {
-
-  &__image {
-
-  }
 
   &__textBlock {
     display: flex;
@@ -27,6 +27,7 @@
     @include u.breakpoint-down(small) {
       position: relative;
       width: 100%;
+      height: auto;
     }
   }
 
@@ -36,10 +37,12 @@
   }
 
   &__title {
-    font-size: u.rem(40);
+    // font-size: u.rem(40);
+    font-size: u.rem(24);
+    font-size: clamp(u.rem(24), u.rem(19) + 2vw, u.rem(40));
     font-weight: 700;
     line-height: 1;
-    margin-bottom: 8px;
+    margin-bottom: 0;
   }
 
   &__description {

@@ -73,6 +73,17 @@
       border: 1px solid var(--weFinancial);
     }
   }
+
+  &__primary,
+  &__secondary,
+  &__tertiary,
+  &__we {
+
+    @include u.breakpoint-down(small) {
+      display: block;
+    }
+  }
+
   &__search {
     border: 0;
     background-color: var(--white);

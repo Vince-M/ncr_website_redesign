@@ -8,6 +8,8 @@ const btnClose = document.querySelector('#btnClose');
 const menuTopNav = document.querySelector('#menuTopNav');
 const overlay = document.querySelector('#overlay');
 const breakpoint = window.matchMedia('(width < 30em)');
+const menu = document.querySelector(".menu");
+const nav__items = document.querySelectorAll(".nav__item");
 
 const setupTopNav = () => {
   if (breakpoint.matches) {
@@ -20,7 +22,7 @@ const setupTopNav = () => {
   }
 }
 
-setupTopNav();
+// setupTopNav();
 
 btnOpen.addEventListener('click', openMobileMenu);
 btnClose.addEventListener('click', closeMobileMenu);
@@ -88,3 +90,5 @@ function closeSubmenu(e) {
 }
 
 document.addEventListener("click", closeSubmenu, false);
+
+

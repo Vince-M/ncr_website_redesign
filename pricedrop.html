@@ -46,7 +46,6 @@
         </div>
         <!-- SITE BRANDING ENDS HERE -->
 
-
         <!-- TOP NAVIGATION STARTS HERE -->
         <nav>
           <span id="nav-label" hidden>Navigation</span>
@@ -63,10 +62,7 @@
                 <img src="img/hamburger.svg" alt="" width="30" height="23">
               </button>
 
-            <div 
-            id="menuTopNav"
-            class="topnav__menu" 
-            role="dialog" 
+            <div id="menuTopNav" class="topnav__menu" role="dialog" 
             aria-labelledby="nav-label">
 
               <button
@@ -78,13 +74,13 @@
 
               <ul class="topnav__navigation">
                 <li class="topnav__location topnav__item">
-                  <a class="topnav__link" href="">
+                  <a class="topnav__link" href="#">
                     <img  class="topnav__link--icon" src="img/icon_marker.svg" alt="" width="20" height="20"> 
                     Location
                   </a>
                 </li>
                 <li class="topnav__email topnav__item">
-                  <a class="topnav__link" href="">
+                  <a class="topnav__link" href="#">
                     <img class="topnav__link--icon" src="img/icon_email.svg" alt="" width="22" height="22">
                     email signup
                   </a>
@@ -101,19 +97,21 @@
                   <span class="topLinks__lang--active">eng</span>/fre
                 </li>
               </ul>
+              
 
               <!-- MAIN TOPNAV STARTS HERE -->
-              <ul class="topnav__links">
-                <li class="topnav__item nav__item has-submenu">
-                  <a href="#" class="topnav__link" >In-Store <img class="topnav__caret" src="img/caret.svg" alt="submenu" height="12" width="12"></a>
-                  <ul class="submenu">
+              <ul class="menu topnav__links">
+                <li class="topnav__link topnav__item nav__item has-sub-menu">
+                  <a tabindex="0">In-Store &#8964;</a>
+                  <!-- <a href="#" class="topnav__link" >In-Store <img class="topnav__caret" src="img/caret.svg" alt="sub-menu" height="12" width="12"></a> -->
+                  <ul class="sub-menu">
                     <li class="subitem"><a role="menuitem" href="waystosave.html">Ways to Save</a></li>
                     <li class="subitem"><a role="menuitem" href="#">Food</a></li>
                     <li class="subitem"><a role="menuitem" href="#">Home & Lifestyle</a></li>
                   </ul>
                 </li>
                 <li class="topnav__item nav__item">
-                  <a href="community.html" class="topnav__link" >Community</a>
+                  <a href="community.html" class="topnav__link">Community</a>
                 </li>
                 <li class="topnav__item nav__item">
                   <a href="#" class="topnav__link" >Our Promise</a>
@@ -150,8 +148,9 @@
         =================================================== -->
         <section class="hero__section hero__section--fw hero__section--priceDrop" role="banner">
           <div class="hero__section--priceDropBkgd">
-            <h1>Price Drop - we're lowering prices on your groceries.</h1>
-            <h2>Helping you save more!</h2>
+            <h1>Price Drop</h1>
+            <h2>lowering prices on your groceries.</h2>
+            <h3>Helping you save more!</h3>
           </div>
         </section>
         <!-- ============================================== -->
@@ -246,7 +245,6 @@
         <!-- SAVING PROMO
         =================================================== -->
         <section class="inStore__promo">
-          <img class="savingProgram__fullWidth">
           <div class="wrapper priceDropBanner">
             <img class="pdBanner" src="img/priceDrop_banner.svg" alt="">
             <img  class="saveMore" src="img/priceDrop_helpingYouSaveMore.svg" alt="">

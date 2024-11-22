@@ -2,9 +2,15 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
 
   <title>Northern / NorthMart</title>
+
+  <meta property="og:title" content="Northern / NorthMart - northmart.ca">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://northmart.ca/">
+  <meta property="og:image" content="">
 
   <link rel="icon" type="image/png" href="/favicon-48x48.png" sizes="48x48" />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -13,8 +19,8 @@
   <link rel="manifest" href="/site.webmanifest" />
 
   <link rel="stylesheet" href="dist/style.css">
-  <script defer src="dist/bodyScrollLock.min.js"></script>
   <script defer src="dist/script.js"></script>
+  <script defer src="dist/bodyScrollLock.min.js"></script>
 
   <!-- Google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -46,7 +52,6 @@
         </div>
         <!-- SITE BRANDING ENDS HERE -->
 
-
         <!-- TOP NAVIGATION STARTS HERE -->
         <nav>
           <span id="nav-label" hidden>Navigation</span>
@@ -63,10 +68,7 @@
                 <img src="img/hamburger.svg" alt="" width="30" height="23">
               </button>
 
-            <div 
-            id="menuTopNav"
-            class="topnav__menu" 
-            role="dialog" 
+            <div id="menuTopNav" class="topnav__menu" role="dialog" 
             aria-labelledby="nav-label">
 
               <button
@@ -78,13 +80,13 @@
 
               <ul class="topnav__navigation">
                 <li class="topnav__location topnav__item">
-                  <a class="topnav__link" href="">
+                  <a class="topnav__link" href="#">
                     <img  class="topnav__link--icon" src="img/icon_marker.svg" alt="" width="20" height="20"> 
                     Location
                   </a>
                 </li>
                 <li class="topnav__email topnav__item">
-                  <a class="topnav__link" href="">
+                  <a class="topnav__link" href="#">
                     <img class="topnav__link--icon" src="img/icon_email.svg" alt="" width="22" height="22">
                     email signup
                   </a>
@@ -101,19 +103,21 @@
                   <span class="topLinks__lang--active">eng</span>/fre
                 </li>
               </ul>
+              
 
               <!-- MAIN TOPNAV STARTS HERE -->
-              <ul class="topnav__links">
-                <li class="topnav__item nav__item has-submenu">
-                  <a href="#" class="topnav__link" >In-Store <img class="topnav__caret" src="img/caret.svg" alt="submenu" height="12" width="12"></a>
-                  <ul class="submenu">
+              <ul class="menu topnav__links">
+                <li class="topnav__link topnav__item nav__item has-sub-menu">
+                  <a tabindex="0">In-Store &#8964;</a>
+                  <!-- <a href="#" class="topnav__link" >In-Store <img class="topnav__caret" src="img/caret.svg" alt="sub-menu" height="12" width="12"></a> -->
+                  <ul class="sub-menu">
                     <li class="subitem"><a role="menuitem" href="waystosave.html">Ways to Save</a></li>
                     <li class="subitem"><a role="menuitem" href="#">Food</a></li>
                     <li class="subitem"><a role="menuitem" href="#">Home & Lifestyle</a></li>
                   </ul>
                 </li>
                 <li class="topnav__item nav__item">
-                  <a href="community.html" class="topnav__link" >Community</a>
+                  <a href="community.html" class="topnav__link">Community</a>
                 </li>
                 <li class="topnav__item nav__item">
                   <a href="#" class="topnav__link" >Our Promise</a>
@@ -173,7 +177,7 @@
          <div class="wrapper community__content">
           <div class="content__intro content__intro--healthyHorizons full-width-split-screen">
             <img src="img/intro_healthyHorizons_1264x896.webp" alt="">
-            <div class="community__textIntro">
+            <div class="intro community__textIntro">
               <p>We believe that children and youth who have access to healthy living programs enjoy the physical, social and mental benefits right now and develop healthy habits that last a lifetime. A child having fun playing hockey, learning to cook or connecting with their traditions is enough, but we also see that child bringing their fitness level, nutritional savvy and cultural strength into adulthood.</p>
             </div>
           </div>
@@ -210,6 +214,7 @@
           </article>
         </section>
         <!-- ============================================== -->
+
 
         <!-- FAQs ACCORDIAN
         =================================================== -->
@@ -308,7 +313,6 @@
         <!-- SAVING PROMO
         =================================================== -->
         <section class="inStore__promo">
-          <img class="savingProgram__fullWidth">
           <div class="wrapper priceDropBanner">
             <img class="pdBanner" src="img/priceDrop_banner.svg" alt="">
             <img  class="saveMore" src="img/priceDrop_helpingYouSaveMore.svg" alt="">

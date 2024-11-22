@@ -15,6 +15,12 @@
     justify-content: center;
     align-items: center;
 
+    @include u.breakpoint-down(small) {
+      display: block;
+      text-align: center;
+      padding-bottom: u.rem(20);
+    }
+
     h2 {
       font-family: var(--font-heading);
       font-size: u.rem(24);
@@ -23,6 +29,12 @@
       color: var(--darkBlue);
       margin: 0 u.rem(32) 0 0;
       padding: u.rem(32) 0;
+
+      @include u.breakpoint-down(small) {
+        margin: 0;
+        padding-bottom: u.rem(16);
+        line-height: 1.3;
+      }
     }
   }
 
