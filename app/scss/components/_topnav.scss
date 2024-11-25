@@ -94,8 +94,8 @@
 
   &__open {
     position: fixed;
-    margin-inline-start: 365px;
-    padding-top: u.rem(20);
+    margin-inline-start: 250px;
+    padding-top: u.rem(24);
     display: none;
 
     @include u.breakpoint-down(medium) {
@@ -206,10 +206,10 @@
 
     @include u.breakpoint-down(medium) {
       // margin-top: u.rem(100);
-      padding: 24px;
+      padding: 0;
       // max-height: 100%;
       max-height: 0;
-      // align-items: center;
+      align-items: center;
     }
 
     @include u.breakpoint-down(small) {

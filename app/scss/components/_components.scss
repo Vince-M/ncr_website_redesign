@@ -91,13 +91,16 @@
     ul {
       margin-bottom: 24px;
     }
+
+    .col1 {
+      @include u.breakpoint-down(small) {
+        margin-bottom: u.rem(40);
+      }
+    }
+  
+    
   }
 
-  .col1 {
-    @include u.breakpoint-down(small) {
-      margin-bottom: u.rem(40);
-    }
-  }
 
   .col1,
   .col2 {

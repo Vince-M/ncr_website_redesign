@@ -2,15 +2,15 @@
 
 // 834px, 1280px, 1440px
 $breakpoints-up: (
-	'medium': f.em(960),
-	'large': f.em(1280),
+	'medium': f.em(700),
+	'large': f.em(960),
 	'xlarge': f.em(1440),
 );
 
-// 479.98px, 833.99px, 1279.98px, 1439.98px
+// 479.98px, 899.99px, 1279.98px, 1439.98px
 $breakpoints-down: (
 	// 'xsmall': f.em(452.98),
-	'small': f.em(479.98),
+	'small': f.em(699.98),
 	'medium': f.em(959.99),
 	'large': f.em(1279.98),
 	'xlarge': f.em(1439.98),

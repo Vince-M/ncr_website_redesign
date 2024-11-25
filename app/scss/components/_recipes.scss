@@ -38,8 +38,10 @@
 
   &__title {
     // font-size: u.rem(40);
-    font-size: u.rem(24);
-    font-size: clamp(u.rem(24), u.rem(19) + 2vw, u.rem(40));
+    // font-size: u.rem(24);
+    // font-size: clamp(u.rem(24), u.rem(19) + 2vw, u.rem(40));
+    font-size: u.rem(20);
+    font-size: clamp(u.rem(20), u.rem(12) + 1.5vw, u.rem(32));
     font-weight: 700;
     line-height: 1;
     margin-bottom: 0;
