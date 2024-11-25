@@ -225,6 +225,25 @@
     }
   }
 
+  &__link {
+    max-width: 640px;
+    max-height: 325px;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: brightness(0.8);
+      transition: all 300ms ease-in-out;
+    }
+
+    img:hover {
+      transform: scale(1.1);
+      filter: brightness(1);
+    }
+  }
+
   &__row {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -428,4 +447,15 @@
   @include u.breakpoint-down(small) {
     padding-top: 30px;
   }
+}
+
+
+// Fade-in animation
+.fade-in {
+  opacity: 0;
+  transition: opacity 450ms ease-in;
+}
+
+.fade-in.appear {
+  opacity: 1;
 }

@@ -11,6 +11,8 @@ const breakpoint = window.matchMedia('(width < 30em)');
 const menu = document.querySelector(".menu");
 const nav__items = document.querySelectorAll(".nav__item");
 const btnHamburger = document.querySelector('#btnHamburger');
+const faders = document.querySelectorAll(".fade-in");
+
 
 const setupTopNav = () => {
   if (breakpoint.matches) {
@@ -95,3 +97,28 @@ function closeSubmenu(e) {
 document.addEventListener("click", closeSubmenu, false);
 
 
+// Intersection Observer
+
+const appearOptions = {
+  threshold: 1,
+  rootMargin: "0px 0px -35px 0px"
+};
+
+const appearOnScroll = new IntersectionObserver (function(
+    entries, 
+    appearOnScroll
+) {
+  entries.forEach(entry => {
+    if (!entry.isIntersecting) {
+      return;
+    } else {
+      entry.target.classList.add('appear');
+      appearOnScroll.unobserve(entry.target);
+    }
+  });
+}, 
+appearOptions);
+
+faders.forEach(fader => {
+  appearOnScroll.observe(fader);
+});
