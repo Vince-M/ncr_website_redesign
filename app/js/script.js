@@ -101,7 +101,7 @@ document.addEventListener("click", closeSubmenu, false);
 
 const appearOptions = {
   threshold: 1,
-  rootMargin: "0px 0px -35px 0px"
+  rootMargin: "0px 0px -10px 0px"
 };
 
 const appearOnScroll = new IntersectionObserver (function(

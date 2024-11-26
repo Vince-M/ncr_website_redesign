@@ -4,6 +4,7 @@
   width: 100%;
   height: auto;
   position: relative;
+  padding: 0 u.rem(24);
   margin-bottom: u.rem(80);
 
   @include u.breakpoint-down(small) {

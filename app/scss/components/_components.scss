@@ -1,7 +1,7 @@
 @use '../util' as u;
 
 .promo {
-
+  
   &__boxes {
     display: flex;
     flex-direction: row;
@@ -12,8 +12,28 @@
       flex-direction: column;
       align-items: center;
     }
+
+    &--fw {
+      padding: 0 u.rem(24);
+      margin-bottom: u.rem(80);
+
+      @include u.breakpoint-down(small) {
+        margin-bottom: u.rem(40);
+      }
+
+      img {
+
+      }
+    }
+
   }
 }
+
+// .fullWidth {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+// }
 
 .savingProgram {
 
@@ -43,6 +63,10 @@
     margin-bottom: u.rem(80);
     background-size: cover;
     padding: u.rem(10) u.rem(20) u.rem(20);
+
+    @include u.breakpoint-down(small) {
+      margin-bottom: u.rem(40);
+    }
   }
 }
 
