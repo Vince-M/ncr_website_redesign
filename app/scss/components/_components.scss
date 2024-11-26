@@ -55,6 +55,23 @@
   }
 }
 
+.savings {
+
+  &__header {
+    font-size: u.rem(48);
+    font-weight: 700;
+    color: var(--primaryBlue);
+    letter-spacing: -0.5;
+    line-height: 1;
+    margin-bottom: 0;
+  }
+
+  &__excerpt {
+    font-size: u.rem(20);
+    
+  }
+}
+
 .inStore {
 
   &__promo {
