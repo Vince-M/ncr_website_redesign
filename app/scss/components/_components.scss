@@ -35,6 +35,10 @@
 //   align-items: center;
 // }
 
+figure.priceDrop-cashscreen {
+  padding: 0;
+}
+
 .savingProgram {
 
   &__priceDrop {
@@ -68,7 +72,16 @@
 
   &__excerpt {
     font-size: u.rem(20);
-    
+  }
+
+  &__programs {
+    border-bottom: 1px solid var(--darkBlue);
+    padding-bottom: u.rem(40);
+
+    &:last-child {
+      border-bottom: 0;
+      padding-bottom: 0;
+    }
   }
 }
 
@@ -87,6 +100,17 @@
   }
 }
 
+figure.advocacy__index--img {
+  padding: 0;
+}
+
+.full-width-split-screen > .advocacy__text {
+
+  @include u.breakpoint-down(small) {
+    padding-top: u.rem(60);
+  }
+}
+
 .advocacy {
   background-color: var(--advocacyRed);
   margin-bottom: u.rem(80);
@@ -97,6 +121,8 @@
     color: var(--white);
     margin-bottom: 0;
     display: block;
+
+
 
     h2 {
       font-size: u.rem(40);
@@ -404,7 +430,6 @@
     margin-bottom: u.rem(80);
   }
 }
-
 
 .content {
 

@@ -5,6 +5,16 @@
   color: var(--white);
   padding: u.rem(80) 0 u.rem(32);
 
+  &__banner {
+
+    &--gotIt {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: u.rem(20);
+    }
+  }
+
   &__bar {
     background-color: var(--primaryYellow);
   }
