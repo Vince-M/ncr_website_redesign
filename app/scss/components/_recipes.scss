@@ -8,6 +8,7 @@
   margin-bottom: u.rem(80);
 
   @include u.breakpoint-down(small) {
+    padding: 0;
     margin-bottom: u.rem(40);
   }
 }
@@ -29,6 +30,7 @@
       position: relative;
       width: 100%;
       height: auto;
+      padding: u.rem(16) u.rem(15);
     }
   }
 
@@ -200,14 +202,23 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 
+    @include u.breakpoint-down(small) {
+      grid-template-columns: 1fr;
+    }
+
     &--col1,
     &--col2 {
       padding: 0 u.rem(24);
+
+      @include u.breakpoint-down(small) {
+        padding: 0;
+      }
     }
 
     &--col1 {
 
     }
+
     &--col2 {
       
     }

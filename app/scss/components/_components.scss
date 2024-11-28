@@ -18,11 +18,8 @@
       margin-bottom: u.rem(80);
 
       @include u.breakpoint-down(small) {
+        padding: 0;
         margin-bottom: u.rem(40);
-      }
-
-      img {
-
       }
     }
 
