@@ -7,6 +7,7 @@
     flex-direction: row;
     gap: u.rem(32);
     margin-bottom: u.rem(80);
+    padding: 0 u.rem(24);
 
     @include u.breakpoint-down(medium) {
       flex-direction: column;
