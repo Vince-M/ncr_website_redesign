@@ -1,0 +1,120 @@
+@use '../util' as u;
+
+.vendor {
+
+  &__hero {
+    margin: 0;
+    max-height: u.rem(500);
+    overflow: hidden; 
+  }
+
+  &__hero-vendor {
+    background-color: #58B25D;
+    color: var(--white);
+  }
+
+  &__branding {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    // padding: 110px 0 20px 2.5rem;
+    margin-top: u.rem(120);
+
+    @include u.breakpoint-down(small) {
+      margin-top: u.rem(40);
+    }
+  }
+
+  &__intro {
+    width: 100%;
+    padding: 0;
+    margin: 0 0 u.rem(80);
+    background-color: var(--primaryBlue);
+  }
+
+  &__info {
+    max-width: u.rem(680);
+    color: var(--white);
+    padding: u.rem(80) u.rem(24);
+    margin: 0 auto;
+
+    h1 {
+      font-size: u.rem(24);
+      font-size: clamp(u.rem(24), u.rem(8) + 3.25vw, u.rem(50));
+      line-height: 1;
+    }
+  }
+
+  &__product {
+    background-color: var(--white);
+    margin-bottom: u.rem(60);
+
+    @include u.breakpoint-down(medium) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &:last-child {
+      margin-bottom: u.rem(100);
+
+      @include u.breakpoint-down(medium) {
+        margin-bottom: u.rem(24);
+      }
+    }
+
+    &--desc {
+      justify-content: center;
+      align-items: center;
+    }
+
+    &--descHead {
+      margin: 0 auto u.rem(24);
+    }
+
+    &--description {
+      margin-bottom: u.rem(32);
+
+      @include u.breakpoint-down(small) {
+        margin-bottom: 0;
+      }
+
+      h2 {
+        font-size: u.rem(32);
+        font-weight: 700;
+        line-height: 1;
+        margin: 0;
+      }
+
+      p {
+        font-size: u.rem(20);
+        font-weight: 400;
+        line-height: 1.4;
+        color: var(--black);
+        margin: 0;
+      }
+
+    }
+  }
+
+  &__items {
+    margin-bottom: 0;
+    justify-content: center;
+    align-items: center;
+  }
+
+}
+
+.activia {
+  color: var(--activia);
+}
+
+.oikos {
+  color: var(--oikos);
+}
+
+.intDelight {
+  color: var(--intDelight);
+}
