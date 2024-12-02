@@ -8,6 +8,17 @@
     overflow: hidden; 
   }
 
+  &__content {
+
+    @include u.breakpoint-down(small) {
+      border-bottom: 1px solid var(--black);
+      }
+
+      &--last {
+        border-bottom: 0;
+      }
+  }
+
   &__hero-vendor {
     background-color: #58B25D;
     color: var(--white);
@@ -55,6 +66,10 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
+    }
+
+    &:nth-child(2) img {
+      order: 2;
     }
 
     &:last-child {
@@ -117,4 +132,11 @@
 
 .intDelight {
   color: var(--intDelight);
+}
+
+.middle {
+  
+  @include u.breakpoint-down(small) {
+    order: 2;
+  }
 }

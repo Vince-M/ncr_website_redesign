@@ -49,6 +49,10 @@
   &__details {
     padding: u.rem(8) u.rem(16);
     border-bottom: 1px solid var(--darkBlue);
+
+    &:last-child {
+      border-bottom: 0;
+    }
   }
 }
 
