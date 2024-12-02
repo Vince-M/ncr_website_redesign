@@ -31,7 +31,7 @@ function browserSyncServe(cb) {
     server: {
       baseDir: '.',
     },
-    browser: 'firefox',
+    browser: 'firefox developer edition',
     notify: {
       styles: {
         top: 'auto',
