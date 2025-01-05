@@ -536,14 +536,15 @@ figure.advocacy__index--img {
 
   &__provinceHead {
     font-weight: 700;
-    font-size: u.rem(36);
+    font-size: u.rem(38);
     color: var(--primaryBlue);
     letter-spacing: -0.5;
     line-height: 1;
-    margin-bottom: 0;
+    margin-bottom: u.rem(24);
   }
 
   &__content {
+    margin: 0 u.rem(24) u.rem(80);
 
     &--rows {
       display: grid;
@@ -585,9 +586,9 @@ figure.advocacy__index--img {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    margin-bottom: u.rem(24);
+    margin-bottom: u.rem(16);
 
-    &--store h4 {
+    h4 {
       font-size: 32px;
       color: var(--primaryBlue);
       margin-bottom: 0;
@@ -600,8 +601,18 @@ figure.advocacy__index--img {
 
   }
 
-  &__contact {
+  &__info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: u.rem(24);
+    width: 100%;
+  }
 
+  &__contact > p,
+  &__hours > p {
+    margin-bottom: 0;
   }
 
   &__hours {
@@ -609,6 +620,22 @@ figure.advocacy__index--img {
   }
 
   &__services {
+    color: var(--primaryBlue);
+    width: 100%;
+    
+    h5 {
+      font-size: u.rem(24);
+      margin-bottom: u.rem(8);
+    }
+  }
 
+  &__service {
+    display: flex;
+    flex-direction: row;
+    gap: u.rem(20);
+
+    p {
+      margin-bottom: 0;
+    }
   }
 }
