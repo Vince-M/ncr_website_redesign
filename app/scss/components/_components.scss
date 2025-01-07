@@ -544,7 +544,7 @@ figure.advocacy__index--img {
   }
 
   &__content {
-    margin: 0 u.rem(24) u.rem(80);
+    margin-bottom: u.rem(80);
 
     &--rows {
       display: grid;
@@ -579,6 +579,7 @@ figure.advocacy__index--img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: u.rem(24);
 
   &__id {
     display: flex;
