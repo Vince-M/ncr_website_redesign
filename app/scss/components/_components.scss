@@ -98,6 +98,20 @@ figure.priceDrop-cashscreen {
   }
 }
 
+.grocery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0;
+
+  &__col1 {
+    
+  }
+
+  &__col2 {
+
+  }
+}
+
 figure.advocacy__index--img {
   padding: 0;
 }
