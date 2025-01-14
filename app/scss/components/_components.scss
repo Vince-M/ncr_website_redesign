@@ -101,7 +101,32 @@ figure.priceDrop-cashscreen {
 .grocery {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 0;
+  gap: u.rem(24);
+  margin-bottom: u.rem(80);
+
+  @include u.breakpoint-down(small) {
+    grid-template-columns: 100%;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    font-size: clamp(1.5rem, 1.2rem + 1vw, 2rem);
+    color: var(--primaryBlue);
+    font-weight: 700;
+    margin-bottom: 0;
+  }
+
+  img {
+    margin-bottom: u.rem(20);
+  }
+
+  ul {
+    margin: 0;
+  }
+
+  &__text {
+    padding: 0 u.rem(20);
+  }
 
   &__col1 {
     
